@@ -1,0 +1,22 @@
+START TRAINING DENOISER AT:  1697656931400
+Training Denoiser. Epoch: 0
+Traceback (most recent call last):
+  File "<ipython-input-10-138c2b69e2a8>", line 43, in training
+    trainer_ae.train_epoch()
+  File "<ipython-input-7-241c3b083c68>", line 26, in train_epoch
+    predict = self.model(data)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "<ipython-input-4-3423e736e3af>", line 139, in forward
+    x = self.encoder(x)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "<ipython-input-4-3423e736e3af>", line 62, in forward
+    x = self.pool1(self.atv1(self.batchNorm1(self.conv1(x))))
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/batchnorm.py", line 182, in forward
+    self.eps,
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/functional.py", line 2451, in batch_norm
+    input, weight, bias, running_mean, running_var, training, momentum, eps, torch.backends.cudnn.enabled
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 434.00 MiB (GPU 0; 11.72 GiB total capacity; 10.36 GiB already allocated; 321.88 MiB free; 10.80 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/tmp/ipykernel_25412/3434731410.py", line 8, in training
+    train_dataset, test_dataset = make_dataset(config["data_root"], config)
+  File "/home/nxhoang/Work/HPE/venv/lib/python3.8/site-packages/wandb/sdk/wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+KeyError: 'data_root'

@@ -1,0 +1,24 @@
+wandb_version: 1
+
+batch_size:
+  value: 64
+d_model:
+  value: 23
+dff:
+  value: 256
+dropout:
+  value: 0.09155869557935126
+l_win:
+  value: 124
+lr:
+  value: 0.002639276798512375
+n_epochs:
+  value: 76
+n_head:
+  value: 1
+num_layers:
+  value: 3
+num_workers:
+  value: 2
+weight_decay:
+  value: 0.012958015126525068

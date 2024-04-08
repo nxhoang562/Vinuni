@@ -1,0 +1,235 @@
+2024-04-04 17:45:55,617 INFO    StreamThr :6550 [internal.py:wandb_internal():86] W&B internal server running at pid: 6550, started at: 2024-04-04 17:45:55.617598
+2024-04-04 17:45:55,619 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status
+2024-04-04 17:45:55,621 INFO    WriterThread:6550 [datastore.py:open_for_write():87] open: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/run-prefrxbr.wandb
+2024-04-04 17:45:55,621 DEBUG   SenderThread:6550 [sender.py:send():378] send: header
+2024-04-04 17:45:55,622 DEBUG   SenderThread:6550 [sender.py:send():378] send: run
+2024-04-04 17:45:56,440 INFO    SenderThread:6550 [dir_watcher.py:__init__():211] watching files in: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files
+2024-04-04 17:45:56,441 INFO    SenderThread:6550 [sender.py:_start_run_threads():1099] run started: prefrxbr with start time 1712227555.617273
+2024-04-04 17:45:56,452 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: check_version
+2024-04-04 17:45:56,452 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: check_version
+2024-04-04 17:45:56,612 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: run_start
+2024-04-04 17:45:56,618 DEBUG   HandlerThread:6550 [system_info.py:__init__():26] System info init
+2024-04-04 17:45:56,618 DEBUG   HandlerThread:6550 [system_info.py:__init__():41] System info init done
+2024-04-04 17:45:56,618 INFO    HandlerThread:6550 [system_monitor.py:start():194] Starting system monitor
+2024-04-04 17:45:56,618 INFO    SystemMonitor:6550 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-04 17:45:56,619 INFO    HandlerThread:6550 [system_monitor.py:probe():214] Collecting system info
+2024-04-04 17:45:56,619 INFO    SystemMonitor:6550 [interfaces.py:start():190] Started cpu monitoring
+2024-04-04 17:45:56,621 INFO    SystemMonitor:6550 [interfaces.py:start():190] Started disk monitoring
+2024-04-04 17:45:56,622 INFO    SystemMonitor:6550 [interfaces.py:start():190] Started gpu monitoring
+2024-04-04 17:45:56,623 INFO    SystemMonitor:6550 [interfaces.py:start():190] Started memory monitoring
+2024-04-04 17:45:56,624 INFO    SystemMonitor:6550 [interfaces.py:start():190] Started network monitoring
+2024-04-04 17:45:56,691 DEBUG   HandlerThread:6550 [system_info.py:probe():150] Probing system
+2024-04-04 17:45:56,698 DEBUG   HandlerThread:6550 [gitlib.py:_init_repo():56] git repository is invalid
+2024-04-04 17:45:56,699 DEBUG   HandlerThread:6550 [system_info.py:probe():198] Probing system done
+2024-04-04 17:45:56,699 DEBUG   HandlerThread:6550 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-101-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-04-04T10:45:56.691771', 'startedAt': '2024-04-04T10:45:55.610767', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'host': 'nxhoang', 'username': 'nxhoang', 'executable': '/home/nxhoang/Work/HPE/venv/bin/python', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2991.7728125000003, 'min': 800.0, 'max': 4937.5}, 'cpu_freq_per_core': [{'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5800.0}, {'current': 3000.0, 'min': 800.0, 'max': 5800.0}, {'current': 3000.0, 'min': 800.0, 'max': 5800.0}, {'current': 3000.0, 'min': 800.0, 'max': 5800.0}, {'current': 1094.725, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}], 'disk': {'/': {'total': 533.9640350341797, 'used': 409.22154998779297}}, 'gpu': 'NVIDIA GeForce RTX 4070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070', 'memory_total': 12878610432}], 'memory': {'total': 31.10809326171875}}
+2024-04-04 17:45:56,699 INFO    HandlerThread:6550 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-04 17:45:56,699 INFO    HandlerThread:6550 [system_monitor.py:probe():227] Publishing system info
+2024-04-04 17:45:56,700 INFO    HandlerThread:6550 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-04 17:45:56,707 DEBUG   SenderThread:6550 [sender.py:send():378] send: files
+2024-04-04 17:45:56,707 INFO    SenderThread:6550 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-04-04 17:45:56,753 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-04 17:45:56,753 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 17:45:56,753 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: python_packages
+2024-04-04 17:45:56,753 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 17:45:56,754 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 17:45:57,259 DEBUG   SenderThread:6550 [sender.py:send():378] send: telemetry
+2024-04-04 17:45:57,441 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/requirements.txt
+2024-04-04 17:45:57,441 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/wandb-metadata.json
+2024-04-04 17:45:57,760 INFO    wandb-upload_0:6550 [upload_job.py:push():131] Uploaded file /tmp/tmpz8vvu4yjwandb/optcwgaf-wandb-metadata.json
+2024-04-04 17:45:58,440 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:00,441 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:01,504 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 17:46:06,547 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 17:46:08,442 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:10,443 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:11,666 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 17:46:11,753 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 17:46:11,753 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 17:46:11,754 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 17:46:12,443 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:14,444 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:16,444 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:16,806 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 17:46:18,445 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:20,445 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:21,956 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 17:46:22,446 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:24,446 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:26,446 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:26,753 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 17:46:26,753 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 17:46:26,755 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 17:46:27,066 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 17:46:27,447 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/config.yaml
+2024-04-04 17:46:28,447 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:30,447 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:32,448 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:32,494 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 17:46:34,448 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:36,448 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:37,598 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 17:46:38,449 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:40,450 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:41,753 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 17:46:41,753 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 17:46:41,755 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 17:46:42,450 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:42,734 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 17:46:44,450 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:45,005 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-04 17:46:45,005 DEBUG   SenderThread:6550 [sender.py:send():378] send: history
+2024-04-04 17:46:45,005 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: summary_record
+2024-04-04 17:46:45,005 INFO    SenderThread:6550 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 17:46:45,451 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/wandb-summary.json
+2024-04-04 17:46:45,782 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-04 17:46:45,783 DEBUG   SenderThread:6550 [sender.py:send():378] send: history
+2024-04-04 17:46:45,783 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: summary_record
+2024-04-04 17:46:45,783 INFO    SenderThread:6550 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 17:46:46,451 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:46,451 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/wandb-summary.json
+2024-04-04 17:46:46,555 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-04 17:46:46,555 DEBUG   SenderThread:6550 [sender.py:send():378] send: history
+2024-04-04 17:46:46,555 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: summary_record
+2024-04-04 17:46:46,556 INFO    SenderThread:6550 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 17:46:47,451 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/wandb-summary.json
+2024-04-04 17:46:47,750 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 17:46:48,451 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:46:52,750 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 17:46:56,624 DEBUG   SystemMonitor:6550 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-04 17:46:56,624 DEBUG   SenderThread:6550 [sender.py:send():378] send: stats
+2024-04-04 17:46:56,753 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 17:46:56,753 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 17:46:56,755 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 17:46:57,653 DEBUG   SenderThread:6550 [sender.py:send():378] send: telemetry
+2024-04-04 17:46:57,653 DEBUG   SenderThread:6550 [sender.py:send():378] send: exit
+2024-04-04 17:46:57,653 INFO    SenderThread:6550 [sender.py:send_exit():585] handling exit code: 1
+2024-04-04 17:46:57,653 INFO    SenderThread:6550 [sender.py:send_exit():587] handling runtime: 61
+2024-04-04 17:46:57,653 INFO    SenderThread:6550 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 17:46:57,653 INFO    SenderThread:6550 [sender.py:send_exit():593] send defer
+2024-04-04 17:46:57,653 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:46:57,653 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-04 17:46:57,653 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:46:57,653 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-04-04 17:46:57,654 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 1
+2024-04-04 17:46:57,654 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:46:57,654 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-04 17:46:57,654 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:46:57,654 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-04-04 17:46:57,654 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 2
+2024-04-04 17:46:57,654 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:46:57,654 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-04 17:46:57,654 INFO    HandlerThread:6550 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-04 17:46:57,654 DEBUG   SystemMonitor:6550 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-04 17:46:57,654 DEBUG   SystemMonitor:6550 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-04 17:46:57,655 INFO    HandlerThread:6550 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-04 17:46:57,655 INFO    HandlerThread:6550 [interfaces.py:finish():202] Joined disk monitor
+2024-04-04 17:46:57,674 INFO    HandlerThread:6550 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-04 17:46:57,674 INFO    HandlerThread:6550 [interfaces.py:finish():202] Joined memory monitor
+2024-04-04 17:46:57,674 INFO    HandlerThread:6550 [interfaces.py:finish():202] Joined network monitor
+2024-04-04 17:46:57,674 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:46:57,674 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-04-04 17:46:57,674 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 3
+2024-04-04 17:46:57,675 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:46:57,675 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-04 17:46:57,675 DEBUG   SenderThread:6550 [sender.py:send():378] send: stats
+2024-04-04 17:46:57,675 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:46:57,675 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-04-04 17:46:57,675 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 4
+2024-04-04 17:46:57,675 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:46:57,675 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-04 17:46:57,676 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:46:57,676 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-04-04 17:46:57,676 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 5
+2024-04-04 17:46:57,676 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:46:57,676 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-04 17:46:57,676 DEBUG   SenderThread:6550 [sender.py:send():378] send: summary
+2024-04-04 17:46:57,676 INFO    SenderThread:6550 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 17:46:57,676 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:46:57,676 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-04-04 17:46:57,676 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 6
+2024-04-04 17:46:57,676 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:46:57,676 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-04 17:46:57,676 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:46:57,676 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-04-04 17:46:57,679 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 17:46:57,997 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 7
+2024-04-04 17:46:57,997 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:46:57,997 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-04 17:46:57,998 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:46:57,998 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-04-04 17:46:58,454 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/wandb-summary.json
+2024-04-04 17:46:58,454 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/config.yaml
+2024-04-04 17:46:58,653 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-04 17:46:59,820 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 8
+2024-04-04 17:46:59,821 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: poll_exit
+2024-04-04 17:46:59,821 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:46:59,822 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-04 17:46:59,822 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:46:59,823 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-04-04 17:46:59,823 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 9
+2024-04-04 17:46:59,823 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:46:59,823 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-04 17:46:59,824 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:46:59,824 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-04-04 17:46:59,824 INFO    SenderThread:6550 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-04 17:47:00,455 INFO    Thread-12 :6550 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:47:00,456 INFO    SenderThread:6550 [dir_watcher.py:finish():388] scan: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files
+2024-04-04 17:47:00,456 INFO    SenderThread:6550 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/requirements.txt requirements.txt
+2024-04-04 17:47:00,457 INFO    SenderThread:6550 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/wandb-metadata.json wandb-metadata.json
+2024-04-04 17:47:00,457 INFO    SenderThread:6550 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/wandb-summary.json wandb-summary.json
+2024-04-04 17:47:00,457 INFO    SenderThread:6550 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/config.yaml config.yaml
+2024-04-04 17:47:00,457 INFO    SenderThread:6550 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log output.log
+2024-04-04 17:47:00,457 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 10
+2024-04-04 17:47:00,457 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:47:00,458 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-04 17:47:00,466 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:47:00,467 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-04-04 17:47:00,467 INFO    SenderThread:6550 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-04 17:47:00,654 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-04 17:47:00,654 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: poll_exit
+2024-04-04 17:47:01,041 INFO    wandb-upload_0:6550 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/wandb-summary.json
+2024-04-04 17:47:01,347 INFO    wandb-upload_3:6550 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/output.log
+2024-04-04 17:47:01,352 INFO    wandb-upload_1:6550 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/requirements.txt
+2024-04-04 17:47:01,353 INFO    wandb-upload_2:6550 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/files/config.yaml
+2024-04-04 17:47:01,554 INFO    Thread-11 :6550 [sender.py:transition_state():613] send defer: 11
+2024-04-04 17:47:01,554 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:47:01,555 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-04 17:47:01,555 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:47:01,556 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-04-04 17:47:01,556 INFO    SenderThread:6550 [file_pusher.py:join():178] waiting for file pusher
+2024-04-04 17:47:01,558 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 12
+2024-04-04 17:47:01,558 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:47:01,558 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-04 17:47:01,559 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:47:01,559 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-04-04 17:47:01,559 INFO    SenderThread:6550 [file_stream.py:finish():595] file stream finish called
+2024-04-04 17:47:01,654 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-04 17:47:01,903 INFO    SenderThread:6550 [file_stream.py:finish():599] file stream finish is done
+2024-04-04 17:47:01,904 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 13
+2024-04-04 17:47:01,904 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: poll_exit
+2024-04-04 17:47:01,904 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:47:01,905 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-04 17:47:01,905 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:47:01,906 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-04-04 17:47:01,906 INFO    SenderThread:6550 [sender.py:transition_state():613] send defer: 14
+2024-04-04 17:47:01,906 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 17:47:01,906 INFO    HandlerThread:6550 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-04 17:47:01,907 DEBUG   SenderThread:6550 [sender.py:send():378] send: final
+2024-04-04 17:47:01,907 DEBUG   SenderThread:6550 [sender.py:send():378] send: footer
+2024-04-04 17:47:01,907 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: defer
+2024-04-04 17:47:01,907 INFO    SenderThread:6550 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-04-04 17:47:01,909 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-04 17:47:01,909 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: poll_exit
+2024-04-04 17:47:01,910 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 17:47:01,911 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: server_info
+2024-04-04 17:47:01,912 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: server_info
+2024-04-04 17:47:01,952 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-04 17:47:01,952 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-04 17:47:01,953 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: job_info
+2024-04-04 17:47:02,269 DEBUG   SenderThread:6550 [sender.py:send_request():405] send_request: job_info
+2024-04-04 17:47:02,270 DEBUG   HandlerThread:6550 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-04 17:47:02,270 INFO    HandlerThread:6550 [handler.py:finish():869] shutting down handler
+2024-04-04 17:47:02,953 INFO    WriterThread:6550 [datastore.py:close():296] close: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_174555-prefrxbr/run-prefrxbr.wandb
+2024-04-04 17:47:03,269 INFO    SenderThread:6550 [sender.py:finish():1521] shutting down sender
+2024-04-04 17:47:03,269 INFO    SenderThread:6550 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-04 17:47:03,269 INFO    SenderThread:6550 [file_pusher.py:join():178] waiting for file pusher

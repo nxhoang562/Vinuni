@@ -1,0 +1,383 @@
+2024-04-05 10:40:28,275 INFO    StreamThr :10685 [internal.py:wandb_internal():89] W&B internal server running at pid: 10685, started at: 2024-04-05 10:40:28.275451
+2024-04-05 10:40:28,277 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status
+2024-04-05 10:40:28,287 INFO    WriterThread:10685 [datastore.py:open_for_write():87] open: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/run-uomo0ebm.wandb
+2024-04-05 10:40:28,287 DEBUG   SenderThread:10685 [sender.py:send():379] send: header
+2024-04-05 10:40:28,318 DEBUG   SenderThread:10685 [sender.py:send():379] send: run
+2024-04-05 10:40:29,063 INFO    SenderThread:10685 [dir_watcher.py:__init__():211] watching files in: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files
+2024-04-05 10:40:29,063 INFO    SenderThread:10685 [sender.py:_start_run_threads():1127] run started: uomo0ebm with start time 1712288428.275616
+2024-04-05 10:40:29,069 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: check_version
+2024-04-05 10:40:29,069 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: check_version
+2024-04-05 10:40:29,345 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: run_start
+2024-04-05 10:40:29,353 DEBUG   HandlerThread:10685 [system_info.py:__init__():26] System info init
+2024-04-05 10:40:29,353 DEBUG   HandlerThread:10685 [system_info.py:__init__():41] System info init done
+2024-04-05 10:40:29,353 INFO    HandlerThread:10685 [system_monitor.py:start():194] Starting system monitor
+2024-04-05 10:40:29,353 INFO    SystemMonitor:10685 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-05 10:40:29,354 INFO    HandlerThread:10685 [system_monitor.py:probe():214] Collecting system info
+2024-04-05 10:40:29,354 INFO    SystemMonitor:10685 [interfaces.py:start():190] Started cpu monitoring
+2024-04-05 10:40:29,354 INFO    SystemMonitor:10685 [interfaces.py:start():190] Started disk monitoring
+2024-04-05 10:40:29,355 INFO    SystemMonitor:10685 [interfaces.py:start():190] Started gpu monitoring
+2024-04-05 10:40:29,355 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:29,355 INFO    SystemMonitor:10685 [interfaces.py:start():190] Started memory monitoring
+2024-04-05 10:40:29,355 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:29,356 INFO    SystemMonitor:10685 [interfaces.py:start():190] Started network monitoring
+2024-04-05 10:40:30,001 DEBUG   HandlerThread:10685 [system_info.py:probe():150] Probing system
+2024-04-05 10:40:30,003 DEBUG   HandlerThread:10685 [gitlib.py:_init_repo():56] git repository is invalid
+2024-04-05 10:40:30,003 DEBUG   HandlerThread:10685 [system_info.py:probe():198] Probing system done
+2024-04-05 10:40:30,003 DEBUG   HandlerThread:10685 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-101-generic-x86_64-with-debian-bullseye-sid', 'python': '3.7.6', 'heartbeatAt': '2024-04-05T03:40:30.001119', 'startedAt': '2024-04-05T03:40:28.267996', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'Work/HPE/src/model/Final Model.ipynb', 'codePathLocal': None, 'root': '/home/nxhoang', 'host': 'nxhoang', 'username': 'nxhoang', 'executable': '/home/nxhoang/anaconda3/bin/python', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1060.5701875, 'min': 800.0, 'max': 4937.5}, 'cpu_freq_per_core': [{'current': 1071.027, 'min': 800.0, 'max': 5500.0}, {'current': 1018.483, 'min': 800.0, 'max': 5500.0}, {'current': 1042.219, 'min': 800.0, 'max': 5500.0}, {'current': 1042.465, 'min': 800.0, 'max': 5500.0}, {'current': 1010.981, 'min': 800.0, 'max': 5500.0}, {'current': 1002.826, 'min': 800.0, 'max': 5500.0}, {'current': 1090.741, 'min': 800.0, 'max': 5500.0}, {'current': 1101.006, 'min': 800.0, 'max': 5500.0}, {'current': 1059.309, 'min': 800.0, 'max': 5800.0}, {'current': 1043.012, 'min': 800.0, 'max': 5800.0}, {'current': 1071.395, 'min': 800.0, 'max': 5800.0}, {'current': 1099.557, 'min': 800.0, 'max': 5800.0}, {'current': 1010.533, 'min': 800.0, 'max': 5500.0}, {'current': 1100.506, 'min': 800.0, 'max': 5500.0}, {'current': 1093.129, 'min': 800.0, 'max': 5500.0}, {'current': 1074.772, 'min': 800.0, 'max': 5500.0}, {'current': 1086.062, 'min': 800.0, 'max': 4300.0}, {'current': 1094.256, 'min': 800.0, 'max': 4300.0}, {'current': 1099.876, 'min': 800.0, 'max': 4300.0}, {'current': 999.263, 'min': 800.0, 'max': 4300.0}, {'current': 897.019, 'min': 800.0, 'max': 4300.0}, {'current': 910.818, 'min': 800.0, 'max': 4300.0}, {'current': 1099.981, 'min': 800.0, 'max': 4300.0}, {'current': 935.909, 'min': 800.0, 'max': 4300.0}, {'current': 1100.059, 'min': 800.0, 'max': 4300.0}, {'current': 899.332, 'min': 800.0, 'max': 4300.0}, {'current': 853.185, 'min': 800.0, 'max': 4300.0}, {'current': 1100.279, 'min': 800.0, 'max': 4300.0}, {'current': 1099.411, 'min': 800.0, 'max': 4300.0}, {'current': 1099.945, 'min': 800.0, 'max': 4300.0}, {'current': 1097.811, 'min': 800.0, 'max': 4300.0}, {'current': 1100.046, 'min': 800.0, 'max': 4300.0}], 'disk': {'/': {'total': 533.9640350341797, 'used': 409.6993064880371}}, 'gpu': 'NVIDIA GeForce RTX 4070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070', 'memory_total': 12878610432}], 'memory': {'total': 31.108078002929688}}
+2024-04-05 10:40:30,003 INFO    HandlerThread:10685 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-05 10:40:30,003 INFO    HandlerThread:10685 [system_monitor.py:probe():227] Publishing system info
+2024-04-05 10:40:30,003 DEBUG   HandlerThread:10685 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-04-05 10:40:30,064 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/conda-environment.yaml
+2024-04-05 10:40:31,356 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:31,356 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:31,671 DEBUG   HandlerThread:10685 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-05 10:40:31,672 INFO    HandlerThread:10685 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-05 10:40:31,678 DEBUG   SenderThread:10685 [sender.py:send():379] send: files
+2024-04-05 10:40:31,678 INFO    SenderThread:10685 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-05 10:40:31,787 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-05 10:40:31,787 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-05 10:40:31,787 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: python_packages
+2024-04-05 10:40:31,788 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: stop_status
+2024-04-05 10:40:31,789 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-05 10:40:32,063 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/conda-environment.yaml
+2024-04-05 10:40:32,064 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/requirements.txt
+2024-04-05 10:40:32,064 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/wandb-metadata.json
+2024-04-05 10:40:32,240 DEBUG   SenderThread:10685 [sender.py:send():379] send: telemetry
+2024-04-05 10:40:32,683 INFO    wandb-upload_0:10685 [upload_job.py:push():131] Uploaded file /tmp/tmpdiemnwkhwandb/m6xnaink-wandb-metadata.json
+2024-04-05 10:40:33,356 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:33,357 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:34,241 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:40:35,357 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:35,357 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:37,358 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:37,358 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:39,241 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:40:39,358 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:39,358 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:41,358 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:41,358 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:43,359 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:43,359 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:44,242 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:40:45,359 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:45,359 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:46,787 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-05 10:40:46,787 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: stop_status
+2024-04-05 10:40:46,828 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-05 10:40:47,360 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:47,360 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:49,360 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:49,360 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:49,861 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:40:50,067 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:40:51,361 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:51,361 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:52,068 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:40:53,361 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:53,361 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:54,068 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:40:54,911 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:40:55,361 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:55,361 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:56,068 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:40:57,362 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:57,362 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:58,069 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:40:59,362 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:59,362 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:40:59,958 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:41:00,069 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:01,070 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/config.yaml
+2024-04-05 10:41:01,363 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:01,363 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:01,787 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-05 10:41:01,787 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-05 10:41:01,788 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: stop_status
+2024-04-05 10:41:02,070 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:03,363 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:03,363 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:04,070 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:05,309 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:41:05,363 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:05,363 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:06,071 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:07,364 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:07,364 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:08,071 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:09,364 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:09,364 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:10,072 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:10,335 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:41:11,365 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:11,365 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:12,072 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:13,365 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:13,365 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:14,072 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:15,365 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:15,366 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:15,400 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:41:16,073 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:16,787 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-05 10:41:16,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-05 10:41:16,788 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: stop_status
+2024-04-05 10:41:17,366 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:17,366 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:18,073 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:19,366 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:19,366 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:20,074 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:20,443 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:41:21,367 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:21,367 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:22,074 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:23,367 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:23,367 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:24,075 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:25,367 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:25,368 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:25,525 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:41:26,075 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:27,368 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:27,368 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:28,076 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:29,356 DEBUG   SystemMonitor:10685 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-05 10:41:29,356 DEBUG   SenderThread:10685 [sender.py:send():379] send: stats
+2024-04-05 10:41:29,368 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:29,369 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:30,076 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:30,578 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:41:31,369 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:31,369 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:31,787 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-05 10:41:31,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-05 10:41:31,788 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: stop_status
+2024-04-05 10:41:32,077 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:33,370 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:33,370 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:34,077 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:35,370 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:35,370 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:35,666 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:41:36,078 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:37,371 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:37,371 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:38,078 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:39,371 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:39,371 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:40,079 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:40,689 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:41:41,372 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:41,372 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:42,079 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:43,372 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:43,372 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:44,079 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:45,373 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:45,373 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:45,770 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:41:46,080 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:46,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-05 10:41:46,788 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: stop_status
+2024-04-05 10:41:46,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-05 10:41:47,373 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:47,373 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:48,080 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:49,373 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:49,374 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:50,081 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:50,813 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:41:51,374 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:51,374 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:52,081 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:53,374 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:53,374 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:54,081 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:55,375 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:55,375 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:55,861 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:41:56,082 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:57,375 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:57,375 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:58,082 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:41:59,357 DEBUG   SenderThread:10685 [sender.py:send():379] send: stats
+2024-04-05 10:41:59,375 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:41:59,375 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:00,083 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:00,899 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:42:01,376 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:01,376 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:01,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-05 10:42:01,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-05 10:42:01,788 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: stop_status
+2024-04-05 10:42:02,083 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:03,376 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:03,376 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:04,084 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:05,376 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:05,377 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:05,947 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:42:06,084 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:07,377 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:07,377 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:08,084 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:09,377 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:09,377 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:10,085 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:10,963 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:42:11,378 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:11,378 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:12,085 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:13,378 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:13,378 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:14,085 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:15,378 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:15,378 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:16,044 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:42:16,086 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:16,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-05 10:42:16,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-05 10:42:16,788 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: stop_status
+2024-04-05 10:42:17,379 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:17,379 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:18,086 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:19,379 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:19,379 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:20,087 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:21,106 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:42:21,380 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:21,380 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:22,087 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:23,380 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:23,380 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:24,088 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:25,381 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:25,381 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:26,088 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:26,165 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:42:27,381 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:27,381 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:28,088 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:29,357 DEBUG   SenderThread:10685 [sender.py:send():379] send: stats
+2024-04-05 10:42:29,381 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:29,382 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:30,089 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:31,254 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:42:31,382 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:31,382 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:31,558 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-05 10:42:31,558 DEBUG   SenderThread:10685 [sender.py:send():379] send: history
+2024-04-05 10:42:31,558 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: summary_record
+2024-04-05 10:42:31,559 INFO    SenderThread:10685 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-05 10:42:31,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-05 10:42:31,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-05 10:42:31,789 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: stop_status
+2024-04-05 10:42:32,089 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:32,089 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/wandb-summary.json
+2024-04-05 10:42:33,382 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:33,383 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:34,090 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:35,318 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-05 10:42:35,318 DEBUG   SenderThread:10685 [sender.py:send():379] send: history
+2024-04-05 10:42:35,319 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: summary_record
+2024-04-05 10:42:35,319 INFO    SenderThread:10685 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-05 10:42:35,383 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:35,383 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:36,090 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:36,090 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/wandb-summary.json
+2024-04-05 10:42:36,270 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:42:37,383 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:37,383 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:38,091 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:39,384 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:39,384 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:40,091 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:41,312 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:42:41,384 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:41,384 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:42,091 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:43,384 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:43,384 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:44,092 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:45,385 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:45,385 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:46,092 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:46,346 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:42:46,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-05 10:42:46,788 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: stop_status
+2024-04-05 10:42:46,789 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-05 10:42:47,385 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:47,385 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:48,093 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:49,385 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:49,386 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:50,093 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:51,377 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:42:51,386 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:51,386 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:52,093 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:53,386 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:53,386 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:54,094 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:55,387 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:55,387 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:56,094 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:56,420 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:42:57,387 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:57,387 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:58,094 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:42:59,358 DEBUG   SenderThread:10685 [sender.py:send():379] send: stats
+2024-04-05 10:42:59,388 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:42:59,388 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:00,095 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:43:01,388 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:01,389 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:01,462 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:43:01,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-05 10:43:01,788 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: stop_status
+2024-04-05 10:43:01,789 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-05 10:43:02,095 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:43:03,389 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:03,389 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:04,096 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:43:05,389 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:05,389 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:06,096 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:43:06,496 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:43:07,389 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:07,390 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:08,097 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:43:09,390 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:09,390 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:10,097 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:43:11,390 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:11,390 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:11,516 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:43:12,097 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:43:13,391 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:13,391 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:14,098 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:43:15,391 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:15,391 ERROR   disk      :10685 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-05 10:43:16,098 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:43:16,560 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: status_report
+2024-04-05 10:43:16,788 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-05 10:43:16,788 DEBUG   SenderThread:10685 [sender.py:send_request():406] send_request: stop_status
+2024-04-05 10:43:16,790 DEBUG   HandlerThread:10685 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-05 10:43:17,379 INFO    memory    :10685 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-04-05 10:43:17,379 DEBUG   SystemMonitor:10685 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-05 10:43:17,379 DEBUG   SystemMonitor:10685 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-05 10:43:17,380 DEBUG   SenderThread:10685 [sender.py:send():379] send: stats
+2024-04-05 10:43:17,444 WARNING StreamThr :10685 [internal.py:is_dead():415] Internal process exiting, parent pid 10651 disappeared
+2024-04-05 10:43:17,444 ERROR   StreamThr :10685 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-04-05 10:43:18,099 INFO    Thread-12 :10685 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/files/output.log
+2024-04-05 10:43:18,380 INFO    HandlerThread:10685 [handler.py:finish():866] shutting down handler
+2024-04-05 10:43:18,380 INFO    HandlerThread:10685 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-05 10:43:18,381 INFO    HandlerThread:10685 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-05 10:43:18,381 INFO    HandlerThread:10685 [interfaces.py:finish():202] Joined disk monitor
+2024-04-05 10:43:18,381 INFO    HandlerThread:10685 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-05 10:43:18,381 INFO    HandlerThread:10685 [interfaces.py:finish():202] Joined memory monitor
+2024-04-05 10:43:18,381 INFO    HandlerThread:10685 [interfaces.py:finish():202] Joined network monitor
+2024-04-05 10:43:18,382 INFO    SenderThread:10685 [sender.py:finish():1546] shutting down sender
+2024-04-05 10:43:18,382 INFO    WriterThread:10685 [datastore.py:close():296] close: /home/nxhoang/Work/HPE/src/model/wandb/run-20240405_104028-uomo0ebm/run-uomo0ebm.wandb
+2024-04-05 10:43:19,374 INFO    MainThread:10685 [internal.py:handle_exit():76] Internal process exited

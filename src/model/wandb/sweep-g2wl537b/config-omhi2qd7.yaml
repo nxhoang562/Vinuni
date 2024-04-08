@@ -1,0 +1,64 @@
+wandb_version: 1
+
+ae_batch_size:
+  value: 64
+ae_lr:
+  value: 0.0009493154988352682
+ae_maxpooling_2:
+  value: 3
+ae_momentum:
+  value: 0.9
+ae_n_epochs:
+  value: 3
+ae_n_kernels_1:
+  value: 23
+ae_n_kernels_2:
+  value: 87
+cb_lr:
+  value: 0.004124407170044791
+cb_momentum:
+  value: 0.9
+cb_n_epochs:
+  value: 1
+est_batch_size:
+  value: 256
+est_d_hidden:
+  value: 73
+est_dropout:
+  value: 0.18995320240026647
+est_kernel_size_1:
+  value: 2
+est_kernel_size_2:
+  value: 3
+est_kernel_size_3:
+  value: 4
+est_kernel_size_4:
+  value: 7
+est_kernel_size_5:
+  value: 7
+est_maxpooling_1:
+  value: 2
+est_maxpooling_2:
+  value: 4
+est_maxpooling_3:
+  value: 3
+est_maxpooling_4:
+  value: 4
+est_maxpooling_5:
+  value: 2
+est_n_basis_kernels:
+  value: 211
+est_n_kernels_1:
+  value: 30
+est_n_kernels_2:
+  value: 20
+est_n_kernels_3:
+  value: 252
+est_n_kernels_4:
+  value: 79
+est_n_kernels_5:
+  value: 234
+est_num_layers:
+  value: 1
+est_temperature:
+  value: 30

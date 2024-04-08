@@ -1,0 +1,264 @@
+wandb_version: 1
+
+method:
+  desc: null
+  value: bayes
+metric:
+  desc: null
+  value:
+    goal: minimize
+    name: Val Loss
+parameters:
+  desc: null
+  value:
+    ae_batch_size:
+      value: 128
+    ae_n_epochs:
+      value: 100
+    ae_lr:
+      distribution: log_uniform_values
+      min: 0.0001
+      max: 0.005
+    ae_momentum:
+      value: 0.9
+    ae_kernel_size_1:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    ae_kernel_size_2:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    ae_maxpooling_1:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    ae_maxpooling_2:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    ae_n_kernels_1:
+      distribution: int_uniform
+      min: 10
+      max: 64
+    ae_n_kernels_2:
+      distribution: int_uniform
+      min: 10
+      max: 40
+    est_batch_size:
+      value: 128
+    est_pool_dim:
+      value: time
+    est_dropout:
+      distribution: uniform
+      min: 0.01
+      max: 0.6
+    est_n_basis_kernels:
+      value: null
+    est_kernel_size_1:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    est_kernel_size_2:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    est_kernel_size_3:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    est_kernel_size_4:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    est_kernel_size_5:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    est_n_kernels_1:
+      distribution: int_uniform
+      min: 10
+      max: 64
+    est_n_kernels_2:
+      distribution: int_uniform
+      min: 10
+      max: 64
+    est_n_kernels_3:
+      distribution: int_uniform
+      min: 10
+      max: 64
+    est_n_kernels_4:
+      distribution: int_uniform
+      min: 10
+      max: 64
+    est_n_kernels_5:
+      distribution: int_uniform
+      min: 10
+      max: 64
+    est_num_layers:
+      value: null
+    est_temperature:
+      value: null
+    est_maxpooling_1:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    est_maxpooling_2:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    est_maxpooling_3:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    est_maxpooling_4:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    est_maxpooling_5:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    cb_n_epochs:
+      distribution: int_uniform
+      min: 60
+      max: 100
+    cb_lr:
+      distribution: log_uniform_values
+      min: 0.0001
+      max: 0.005
+    cb_momentum:
+      value: 0.9
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.10
+    cli_version: 0.16.4
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    start_time: 1712053101.0
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      3:
+      - 2
+      - 16
+      - 23
+      - 37
+      4: 3.8.10
+      5: 0.16.4
+      8:
+      - 1
+      - 5
+      13: linux-x86_64
+ae_batch_size:
+  desc: null
+  value: 128
+ae_kernel_size_1:
+  desc: null
+  value: 2
+ae_kernel_size_2:
+  desc: null
+  value: 5
+ae_lr:
+  desc: null
+  value: 0.0020704930002695874
+ae_maxpooling_1:
+  desc: null
+  value: 2
+ae_maxpooling_2:
+  desc: null
+  value: 2
+ae_momentum:
+  desc: null
+  value: 0.9
+ae_n_epochs:
+  desc: null
+  value: 100
+ae_n_kernels_1:
+  desc: null
+  value: 58
+ae_n_kernels_2:
+  desc: null
+  value: 34
+cb_lr:
+  desc: null
+  value: 0.0002389647189914359
+cb_momentum:
+  desc: null
+  value: 0.9
+cb_n_epochs:
+  desc: null
+  value: 67
+est_batch_size:
+  desc: null
+  value: 128
+est_dropout:
+  desc: null
+  value: 0.15729575820716485
+est_kernel_size_1:
+  desc: null
+  value: 3
+est_kernel_size_2:
+  desc: null
+  value: 7
+est_kernel_size_3:
+  desc: null
+  value: 2
+est_kernel_size_4:
+  desc: null
+  value: 4
+est_kernel_size_5:
+  desc: null
+  value: 6
+est_maxpooling_1:
+  desc: null
+  value: 5
+est_maxpooling_2:
+  desc: null
+  value: 6
+est_maxpooling_3:
+  desc: null
+  value: 3
+est_maxpooling_4:
+  desc: null
+  value: 4
+est_maxpooling_5:
+  desc: null
+  value: 5
+est_n_basis_kernels:
+  desc: null
+  value: null
+est_n_kernels_1:
+  desc: null
+  value: 59
+est_n_kernels_2:
+  desc: null
+  value: 54
+est_n_kernels_3:
+  desc: null
+  value: 56
+est_n_kernels_4:
+  desc: null
+  value: 52
+est_n_kernels_5:
+  desc: null
+  value: 42
+est_num_layers:
+  desc: null
+  value: null
+est_pool_dim:
+  desc: null
+  value: time
+est_temperature:
+  desc: null
+  value: null

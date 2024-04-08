@@ -1,0 +1,443 @@
+2024-04-04 21:41:07,544 INFO    StreamThr :18287 [internal.py:wandb_internal():86] W&B internal server running at pid: 18287, started at: 2024-04-04 21:41:07.544107
+2024-04-04 21:41:07,546 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status
+2024-04-04 21:41:07,552 INFO    WriterThread:18287 [datastore.py:open_for_write():87] open: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/run-rgdsvp0g.wandb
+2024-04-04 21:41:07,552 DEBUG   SenderThread:18287 [sender.py:send():378] send: header
+2024-04-04 21:41:07,553 DEBUG   SenderThread:18287 [sender.py:send():378] send: run
+2024-04-04 21:41:08,562 INFO    SenderThread:18287 [dir_watcher.py:__init__():211] watching files in: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files
+2024-04-04 21:41:08,562 INFO    SenderThread:18287 [sender.py:_start_run_threads():1099] run started: rgdsvp0g with start time 1712241667.543305
+2024-04-04 21:41:08,568 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: check_version
+2024-04-04 21:41:08,568 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: check_version
+2024-04-04 21:41:08,767 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: run_start
+2024-04-04 21:41:08,776 DEBUG   HandlerThread:18287 [system_info.py:__init__():26] System info init
+2024-04-04 21:41:08,776 DEBUG   HandlerThread:18287 [system_info.py:__init__():41] System info init done
+2024-04-04 21:41:08,776 INFO    HandlerThread:18287 [system_monitor.py:start():194] Starting system monitor
+2024-04-04 21:41:08,776 INFO    SystemMonitor:18287 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-04 21:41:08,777 INFO    HandlerThread:18287 [system_monitor.py:probe():214] Collecting system info
+2024-04-04 21:41:08,778 INFO    SystemMonitor:18287 [interfaces.py:start():190] Started cpu monitoring
+2024-04-04 21:41:08,779 INFO    SystemMonitor:18287 [interfaces.py:start():190] Started disk monitoring
+2024-04-04 21:41:08,780 INFO    SystemMonitor:18287 [interfaces.py:start():190] Started gpu monitoring
+2024-04-04 21:41:08,781 INFO    SystemMonitor:18287 [interfaces.py:start():190] Started memory monitoring
+2024-04-04 21:41:08,782 INFO    SystemMonitor:18287 [interfaces.py:start():190] Started network monitoring
+2024-04-04 21:41:08,835 DEBUG   HandlerThread:18287 [system_info.py:probe():150] Probing system
+2024-04-04 21:41:08,842 DEBUG   HandlerThread:18287 [gitlib.py:_init_repo():56] git repository is invalid
+2024-04-04 21:41:08,843 DEBUG   HandlerThread:18287 [system_info.py:probe():198] Probing system done
+2024-04-04 21:41:08,843 DEBUG   HandlerThread:18287 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-101-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-04-04T14:41:08.835852', 'startedAt': '2024-04-04T14:41:07.530070', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'host': 'nxhoang', 'username': 'nxhoang', 'executable': '/home/nxhoang/Work/HPE/venv/bin/python', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2987.4567500000003, 'min': 800.0, 'max': 4937.5}, 'cpu_freq_per_core': [{'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 1099.232, 'min': 800.0, 'max': 5800.0}, {'current': 3000.0, 'min': 800.0, 'max': 5800.0}, {'current': 5309.159, 'min': 800.0, 'max': 5800.0}, {'current': 3000.0, 'min': 800.0, 'max': 5800.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 1013.172, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 4172.742, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}], 'disk': {'/': {'total': 533.9640350341797, 'used': 409.2189826965332}}, 'gpu': 'NVIDIA GeForce RTX 4070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070', 'memory_total': 12878610432}], 'memory': {'total': 31.10809326171875}}
+2024-04-04 21:41:08,843 INFO    HandlerThread:18287 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-04 21:41:08,843 INFO    HandlerThread:18287 [system_monitor.py:probe():227] Publishing system info
+2024-04-04 21:41:08,845 INFO    HandlerThread:18287 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-04 21:41:08,854 DEBUG   SenderThread:18287 [sender.py:send():378] send: files
+2024-04-04 21:41:08,855 INFO    SenderThread:18287 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-04-04 21:41:08,948 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-04 21:41:08,948 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:41:08,948 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: python_packages
+2024-04-04 21:41:08,949 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:41:08,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:41:09,389 DEBUG   SenderThread:18287 [sender.py:send():378] send: telemetry
+2024-04-04 21:41:09,562 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/wandb-metadata.json
+2024-04-04 21:41:09,562 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/requirements.txt
+2024-04-04 21:41:09,884 INFO    wandb-upload_0:18287 [upload_job.py:push():131] Uploaded file /tmp/tmp301t6m53wandb/t9dt0w3x-wandb-metadata.json
+2024-04-04 21:41:10,562 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:12,562 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:13,008 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:41:18,009 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:41:23,009 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:41:23,948 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:41:23,949 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:41:23,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:41:28,037 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:41:28,565 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:30,566 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:32,566 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:33,062 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:41:34,566 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:36,567 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:38,073 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:41:38,567 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/config.yaml
+2024-04-04 21:41:38,567 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:38,948 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:41:38,948 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:41:38,949 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:41:40,567 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:42,568 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:43,382 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:41:44,568 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:46,568 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:48,411 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:41:48,569 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:50,569 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:52,569 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:53,419 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:41:53,949 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:41:53,949 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:41:53,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:41:54,570 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:56,570 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:41:58,436 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:41:58,571 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:00,571 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:02,571 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:03,450 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:42:04,572 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:06,572 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:08,489 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:42:08,582 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:08,782 DEBUG   SystemMonitor:18287 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-04 21:42:08,782 DEBUG   SenderThread:18287 [sender.py:send():378] send: stats
+2024-04-04 21:42:08,949 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:42:08,949 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:42:08,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:42:10,583 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:12,583 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:13,511 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:42:14,584 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:16,584 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:18,523 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:42:18,585 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:20,585 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:22,586 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:23,551 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:42:23,949 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:42:23,949 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:42:23,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:42:24,586 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:26,587 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:28,552 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:42:28,587 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:30,588 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:32,588 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:33,574 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:42:34,589 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:36,589 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:38,590 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:38,613 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:42:38,783 DEBUG   SenderThread:18287 [sender.py:send():378] send: stats
+2024-04-04 21:42:38,949 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:42:38,949 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:42:38,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:42:40,590 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:42,590 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:43,630 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:42:44,591 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:46,592 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:48,592 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:48,652 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:42:50,592 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:50,995 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-04 21:42:50,996 DEBUG   SenderThread:18287 [sender.py:send():378] send: history
+2024-04-04 21:42:50,996 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: summary_record
+2024-04-04 21:42:50,996 INFO    SenderThread:18287 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 21:42:51,593 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/wandb-summary.json
+2024-04-04 21:42:52,218 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-04 21:42:52,219 DEBUG   SenderThread:18287 [sender.py:send():378] send: history
+2024-04-04 21:42:52,219 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: summary_record
+2024-04-04 21:42:52,219 INFO    SenderThread:18287 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 21:42:52,593 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/wandb-summary.json
+2024-04-04 21:42:52,593 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:53,668 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:42:53,949 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:42:53,949 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:42:53,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:42:54,593 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:56,594 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:58,594 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:42:58,679 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:43:00,595 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:02,595 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:03,684 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:43:04,596 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:06,596 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:08,597 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:08,706 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:43:08,783 DEBUG   SenderThread:18287 [sender.py:send():378] send: stats
+2024-04-04 21:43:08,949 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:43:08,949 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:43:08,951 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:43:10,598 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:12,598 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:13,739 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:43:14,598 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:16,599 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:18,599 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:18,762 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:43:20,600 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:22,600 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:23,781 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:43:23,949 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:43:23,949 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:43:23,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:43:24,600 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:26,601 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:28,601 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:28,786 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:43:30,602 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:32,602 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:33,801 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:43:34,603 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:36,603 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:38,604 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:38,783 DEBUG   SenderThread:18287 [sender.py:send():378] send: stats
+2024-04-04 21:43:38,818 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:43:38,949 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:43:38,949 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:43:38,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:43:40,605 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:42,605 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:43,847 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:43:44,606 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:46,606 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:48,607 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:48,873 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:43:50,607 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:52,608 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:53,880 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:43:53,949 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:43:53,949 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:43:53,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:43:54,608 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:56,608 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:58,609 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:43:58,908 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:44:00,609 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:02,610 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:03,947 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:44:04,610 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:06,611 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:08,611 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:08,785 DEBUG   SenderThread:18287 [sender.py:send():378] send: stats
+2024-04-04 21:44:08,949 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:44:08,950 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:44:08,951 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:44:09,289 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:44:10,135 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-04 21:44:10,136 DEBUG   SenderThread:18287 [sender.py:send():378] send: history
+2024-04-04 21:44:10,136 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: summary_record
+2024-04-04 21:44:10,137 INFO    SenderThread:18287 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 21:44:10,612 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/wandb-summary.json
+2024-04-04 21:44:10,612 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:11,331 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-04 21:44:11,332 DEBUG   SenderThread:18287 [sender.py:send():378] send: history
+2024-04-04 21:44:11,332 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: summary_record
+2024-04-04 21:44:11,332 INFO    SenderThread:18287 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 21:44:11,612 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/wandb-summary.json
+2024-04-04 21:44:12,612 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:14,323 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:44:14,613 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:16,614 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:18,614 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:19,346 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:44:20,614 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:22,615 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:23,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:44:23,950 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:44:23,951 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:44:24,349 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:44:24,615 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:26,616 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:28,616 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:29,375 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:44:30,616 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:32,617 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:34,408 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:44:34,617 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:36,617 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:38,618 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:38,784 DEBUG   SenderThread:18287 [sender.py:send():378] send: stats
+2024-04-04 21:44:38,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:44:38,950 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:44:38,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:44:39,445 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:44:40,618 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:42,619 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:44,476 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:44:44,619 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:46,619 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:48,620 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:49,498 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:44:50,620 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:52,620 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:53,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:44:53,951 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:44:53,951 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:44:54,525 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:44:54,621 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:56,621 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:58,622 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:44:59,579 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:45:00,622 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:02,622 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:04,579 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:45:04,623 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:06,623 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:08,624 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:08,785 DEBUG   SenderThread:18287 [sender.py:send():378] send: stats
+2024-04-04 21:45:08,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:45:08,950 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:45:08,952 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:45:09,593 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:45:10,624 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:12,624 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:14,625 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:14,627 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:45:16,625 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:18,625 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:19,640 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:45:20,626 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:22,626 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:23,950 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-04 21:45:23,950 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: stop_status
+2024-04-04 21:45:23,952 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:45:24,627 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:24,657 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:45:26,627 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:28,627 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:29,662 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:45:30,628 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:31,306 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-04 21:45:31,307 DEBUG   SenderThread:18287 [sender.py:send():378] send: history
+2024-04-04 21:45:31,307 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: summary_record
+2024-04-04 21:45:31,308 INFO    SenderThread:18287 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 21:45:31,628 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/wandb-summary.json
+2024-04-04 21:45:32,532 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-04 21:45:32,532 DEBUG   SenderThread:18287 [sender.py:send():378] send: history
+2024-04-04 21:45:32,532 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: summary_record
+2024-04-04 21:45:32,533 INFO    SenderThread:18287 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 21:45:32,628 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/wandb-summary.json
+2024-04-04 21:45:32,629 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:33,823 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-04 21:45:33,824 DEBUG   SenderThread:18287 [sender.py:send():378] send: history
+2024-04-04 21:45:33,824 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: summary_record
+2024-04-04 21:45:33,824 INFO    SenderThread:18287 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 21:45:34,058 DEBUG   SenderThread:18287 [sender.py:send():378] send: telemetry
+2024-04-04 21:45:34,058 DEBUG   SenderThread:18287 [sender.py:send():378] send: exit
+2024-04-04 21:45:34,058 INFO    SenderThread:18287 [sender.py:send_exit():585] handling exit code: 1
+2024-04-04 21:45:34,058 INFO    SenderThread:18287 [sender.py:send_exit():587] handling runtime: 265
+2024-04-04 21:45:34,058 INFO    SenderThread:18287 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 21:45:34,058 INFO    SenderThread:18287 [sender.py:send_exit():593] send defer
+2024-04-04 21:45:34,058 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:34,058 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-04 21:45:34,058 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:34,058 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-04-04 21:45:34,058 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 1
+2024-04-04 21:45:34,059 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:34,059 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-04 21:45:34,059 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:34,059 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-04-04 21:45:34,059 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 2
+2024-04-04 21:45:34,059 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:34,059 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-04 21:45:34,059 INFO    HandlerThread:18287 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-04 21:45:34,059 DEBUG   SystemMonitor:18287 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-04 21:45:34,059 INFO    HandlerThread:18287 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-04 21:45:34,059 DEBUG   SystemMonitor:18287 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-04 21:45:34,059 INFO    HandlerThread:18287 [interfaces.py:finish():202] Joined disk monitor
+2024-04-04 21:45:34,081 INFO    HandlerThread:18287 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-04 21:45:34,081 INFO    HandlerThread:18287 [interfaces.py:finish():202] Joined memory monitor
+2024-04-04 21:45:34,081 INFO    HandlerThread:18287 [interfaces.py:finish():202] Joined network monitor
+2024-04-04 21:45:34,081 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:34,081 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-04-04 21:45:34,081 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 3
+2024-04-04 21:45:34,081 DEBUG   SenderThread:18287 [sender.py:send():378] send: stats
+2024-04-04 21:45:34,081 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:34,081 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-04 21:45:34,081 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:34,081 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-04-04 21:45:34,081 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 4
+2024-04-04 21:45:34,081 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:34,081 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-04 21:45:34,082 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:34,082 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-04-04 21:45:34,082 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 5
+2024-04-04 21:45:34,082 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:34,082 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-04 21:45:34,082 DEBUG   SenderThread:18287 [sender.py:send():378] send: summary
+2024-04-04 21:45:34,082 INFO    SenderThread:18287 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-04-04 21:45:34,082 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:34,082 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-04-04 21:45:34,082 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 6
+2024-04-04 21:45:34,082 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:34,082 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-04 21:45:34,082 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:34,083 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-04-04 21:45:34,084 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: status_report
+2024-04-04 21:45:34,401 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 7
+2024-04-04 21:45:34,402 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:34,402 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-04 21:45:34,402 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:34,402 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-04-04 21:45:34,629 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/config.yaml
+2024-04-04 21:45:34,630 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/wandb-summary.json
+2024-04-04 21:45:34,630 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:35,059 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-04 21:45:36,550 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 8
+2024-04-04 21:45:36,551 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: poll_exit
+2024-04-04 21:45:36,551 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:36,552 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-04 21:45:36,552 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:36,553 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-04-04 21:45:36,553 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 9
+2024-04-04 21:45:36,553 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:36,553 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-04 21:45:36,554 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:36,554 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-04-04 21:45:36,554 INFO    SenderThread:18287 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-04 21:45:36,631 INFO    Thread-12 :18287 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:36,631 INFO    SenderThread:18287 [dir_watcher.py:finish():388] scan: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files
+2024-04-04 21:45:36,632 INFO    SenderThread:18287 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/requirements.txt requirements.txt
+2024-04-04 21:45:36,632 INFO    SenderThread:18287 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/wandb-metadata.json wandb-metadata.json
+2024-04-04 21:45:36,632 INFO    SenderThread:18287 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/wandb-summary.json wandb-summary.json
+2024-04-04 21:45:36,632 INFO    SenderThread:18287 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/config.yaml config.yaml
+2024-04-04 21:45:36,632 INFO    SenderThread:18287 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log output.log
+2024-04-04 21:45:36,633 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 10
+2024-04-04 21:45:36,633 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:36,633 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-04 21:45:36,647 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:36,651 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-04-04 21:45:36,651 INFO    SenderThread:18287 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-04 21:45:37,060 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-04 21:45:37,060 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: poll_exit
+2024-04-04 21:45:37,375 INFO    wandb-upload_0:18287 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/wandb-summary.json
+2024-04-04 21:45:37,433 INFO    wandb-upload_1:18287 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/requirements.txt
+2024-04-04 21:45:37,556 INFO    wandb-upload_2:18287 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/config.yaml
+2024-04-04 21:45:38,060 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-04 21:45:38,061 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: poll_exit
+2024-04-04 21:45:38,273 INFO    wandb-upload_3:18287 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/files/output.log
+2024-04-04 21:45:38,474 INFO    Thread-11 :18287 [sender.py:transition_state():613] send defer: 11
+2024-04-04 21:45:38,474 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:38,474 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-04 21:45:38,475 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:38,475 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-04-04 21:45:38,475 INFO    SenderThread:18287 [file_pusher.py:join():178] waiting for file pusher
+2024-04-04 21:45:38,476 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 12
+2024-04-04 21:45:38,476 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:38,476 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-04 21:45:38,476 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:38,476 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-04-04 21:45:38,476 INFO    SenderThread:18287 [file_stream.py:finish():595] file stream finish called
+2024-04-04 21:45:38,784 INFO    SenderThread:18287 [file_stream.py:finish():599] file stream finish is done
+2024-04-04 21:45:38,784 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 13
+2024-04-04 21:45:38,785 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:38,785 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-04 21:45:38,785 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:38,785 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-04-04 21:45:38,786 INFO    SenderThread:18287 [sender.py:transition_state():613] send defer: 14
+2024-04-04 21:45:38,786 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: defer
+2024-04-04 21:45:38,786 INFO    HandlerThread:18287 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-04 21:45:38,786 DEBUG   SenderThread:18287 [sender.py:send():378] send: final
+2024-04-04 21:45:38,786 DEBUG   SenderThread:18287 [sender.py:send():378] send: footer
+2024-04-04 21:45:38,787 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: defer
+2024-04-04 21:45:38,787 INFO    SenderThread:18287 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-04-04 21:45:38,788 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-04 21:45:38,788 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: poll_exit
+2024-04-04 21:45:38,789 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-04 21:45:38,791 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: server_info
+2024-04-04 21:45:38,791 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: server_info
+2024-04-04 21:45:38,832 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-04 21:45:38,833 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-04 21:45:38,833 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: job_info
+2024-04-04 21:45:39,093 DEBUG   SenderThread:18287 [sender.py:send_request():405] send_request: job_info
+2024-04-04 21:45:39,095 DEBUG   HandlerThread:18287 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-04 21:45:39,095 INFO    HandlerThread:18287 [handler.py:finish():869] shutting down handler
+2024-04-04 21:45:39,834 INFO    WriterThread:18287 [datastore.py:close():296] close: /home/nxhoang/Work/HPE/src/model/wandb/run-20240404_214107-rgdsvp0g/run-rgdsvp0g.wandb
+2024-04-04 21:45:40,093 INFO    SenderThread:18287 [sender.py:finish():1521] shutting down sender
+2024-04-04 21:45:40,093 INFO    SenderThread:18287 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-04 21:45:40,094 INFO    SenderThread:18287 [file_pusher.py:join():178] waiting for file pusher

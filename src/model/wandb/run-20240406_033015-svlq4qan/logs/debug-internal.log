@@ -1,0 +1,642 @@
+2024-04-06 03:30:15,039 INFO    StreamThr :18866 [internal.py:wandb_internal():89] W&B internal server running at pid: 18866, started at: 2024-04-06 03:30:15.039199
+2024-04-06 03:30:15,041 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status
+2024-04-06 03:30:15,051 INFO    WriterThread:18866 [datastore.py:open_for_write():87] open: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/run-svlq4qan.wandb
+2024-04-06 03:30:15,051 DEBUG   SenderThread:18866 [sender.py:send():379] send: header
+2024-04-06 03:30:15,052 DEBUG   SenderThread:18866 [sender.py:send():379] send: run
+2024-04-06 03:30:15,844 INFO    SenderThread:18866 [dir_watcher.py:__init__():211] watching files in: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files
+2024-04-06 03:30:15,845 INFO    SenderThread:18866 [sender.py:_start_run_threads():1127] run started: svlq4qan with start time 1712349015.038249
+2024-04-06 03:30:15,858 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: check_version
+2024-04-06 03:30:15,859 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: check_version
+2024-04-06 03:30:16,139 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: run_start
+2024-04-06 03:30:16,150 DEBUG   HandlerThread:18866 [system_info.py:__init__():26] System info init
+2024-04-06 03:30:16,150 DEBUG   HandlerThread:18866 [system_info.py:__init__():41] System info init done
+2024-04-06 03:30:16,150 INFO    HandlerThread:18866 [system_monitor.py:start():194] Starting system monitor
+2024-04-06 03:30:16,150 INFO    SystemMonitor:18866 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-06 03:30:16,151 INFO    HandlerThread:18866 [system_monitor.py:probe():214] Collecting system info
+2024-04-06 03:30:16,151 INFO    SystemMonitor:18866 [interfaces.py:start():190] Started cpu monitoring
+2024-04-06 03:30:16,151 INFO    SystemMonitor:18866 [interfaces.py:start():190] Started disk monitoring
+2024-04-06 03:30:16,153 INFO    SystemMonitor:18866 [interfaces.py:start():190] Started gpu monitoring
+2024-04-06 03:30:16,154 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:16,154 INFO    SystemMonitor:18866 [interfaces.py:start():190] Started memory monitoring
+2024-04-06 03:30:16,155 INFO    SystemMonitor:18866 [interfaces.py:start():190] Started network monitoring
+2024-04-06 03:30:16,155 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:16,809 DEBUG   HandlerThread:18866 [system_info.py:probe():150] Probing system
+2024-04-06 03:30:16,817 DEBUG   HandlerThread:18866 [gitlib.py:_init_repo():56] git repository is invalid
+2024-04-06 03:30:16,817 DEBUG   HandlerThread:18866 [system_info.py:probe():198] Probing system done
+2024-04-06 03:30:16,817 DEBUG   HandlerThread:18866 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-101-generic-x86_64-with-debian-bullseye-sid', 'python': '3.7.6', 'heartbeatAt': '2024-04-05T20:30:16.809411', 'startedAt': '2024-04-05T20:30:15.022848', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'Work/HPE/src/model/Final Model.ipynb', 'codePathLocal': None, 'root': '/home/nxhoang', 'host': 'nxhoang', 'username': 'nxhoang', 'executable': '/home/nxhoang/anaconda3/bin/python', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1088.5558125, 'min': 800.0, 'max': 4937.5}, 'cpu_freq_per_core': [{'current': 1089.304, 'min': 800.0, 'max': 5500.0}, {'current': 1077.207, 'min': 800.0, 'max': 5500.0}, {'current': 1094.068, 'min': 800.0, 'max': 5500.0}, {'current': 1028.382, 'min': 800.0, 'max': 5500.0}, {'current': 1094.307, 'min': 800.0, 'max': 5500.0}, {'current': 1100.568, 'min': 800.0, 'max': 5500.0}, {'current': 1082.821, 'min': 800.0, 'max': 5500.0}, {'current': 1100.178, 'min': 800.0, 'max': 5500.0}, {'current': 1093.403, 'min': 800.0, 'max': 5800.0}, {'current': 1088.928, 'min': 800.0, 'max': 5800.0}, {'current': 1081.971, 'min': 800.0, 'max': 5800.0}, {'current': 1063.821, 'min': 800.0, 'max': 5800.0}, {'current': 1085.001, 'min': 800.0, 'max': 5500.0}, {'current': 1073.682, 'min': 800.0, 'max': 5500.0}, {'current': 1082.894, 'min': 800.0, 'max': 5500.0}, {'current': 824.797, 'min': 800.0, 'max': 5500.0}, {'current': 1068.529, 'min': 800.0, 'max': 4300.0}, {'current': 1095.254, 'min': 800.0, 'max': 4300.0}, {'current': 998.48, 'min': 800.0, 'max': 4300.0}, {'current': 1100.026, 'min': 800.0, 'max': 4300.0}, {'current': 1100.006, 'min': 800.0, 'max': 4300.0}, {'current': 871.535, 'min': 800.0, 'max': 4300.0}, {'current': 1099.971, 'min': 800.0, 'max': 4300.0}, {'current': 1100.096, 'min': 800.0, 'max': 4300.0}, {'current': 1099.516, 'min': 800.0, 'max': 4300.0}, {'current': 1102.136, 'min': 800.0, 'max': 4300.0}, {'current': 1101.829, 'min': 800.0, 'max': 4300.0}, {'current': 1099.783, 'min': 800.0, 'max': 4300.0}, {'current': 1099.28, 'min': 800.0, 'max': 4300.0}, {'current': 1100.938, 'min': 800.0, 'max': 4300.0}, {'current': 1101.312, 'min': 800.0, 'max': 4300.0}, {'current': 1098.005, 'min': 800.0, 'max': 4300.0}], 'disk': {'/': {'total': 533.9640350341797, 'used': 409.7640800476074}}, 'gpu': 'NVIDIA GeForce RTX 4070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070', 'memory_total': 12878610432}], 'memory': {'total': 31.108078002929688}}
+2024-04-06 03:30:16,817 INFO    HandlerThread:18866 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-06 03:30:16,817 INFO    HandlerThread:18866 [system_monitor.py:probe():227] Publishing system info
+2024-04-06 03:30:16,818 DEBUG   HandlerThread:18866 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-04-06 03:30:16,845 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/conda-environment.yaml
+2024-04-06 03:30:18,155 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:18,156 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:18,640 DEBUG   HandlerThread:18866 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-06 03:30:18,641 INFO    HandlerThread:18866 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-06 03:30:18,645 DEBUG   SenderThread:18866 [sender.py:send():379] send: files
+2024-04-06 03:30:18,645 INFO    SenderThread:18866 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-06 03:30:18,770 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-06 03:30:18,770 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: python_packages
+2024-04-06 03:30:18,771 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-06 03:30:18,771 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: stop_status
+2024-04-06 03:30:18,771 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:30:18,845 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/conda-environment.yaml
+2024-04-06 03:30:18,845 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/wandb-metadata.json
+2024-04-06 03:30:18,845 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/requirements.txt
+2024-04-06 03:30:19,338 DEBUG   SenderThread:18866 [sender.py:send():379] send: telemetry
+2024-04-06 03:30:19,725 INFO    wandb-upload_0:18866 [upload_job.py:push():131] Uploaded file /tmp/tmp_vtfoucawandb/8p8hwmxa-wandb-metadata.json
+2024-04-06 03:30:20,156 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:20,157 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:20,338 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:30:22,157 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:22,157 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:24,158 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:24,158 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:25,339 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:30:26,158 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:26,158 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:28,158 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:28,159 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:30,159 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:30,159 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:30,339 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:30:32,159 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:32,160 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:33,771 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-06 03:30:33,771 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: stop_status
+2024-04-06 03:30:33,812 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:30:34,160 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:34,160 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:36,160 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:36,161 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:38,161 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:38,161 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:38,772 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:30:40,161 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:40,162 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:42,162 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:42,162 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:43,772 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:30:44,162 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:44,163 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:46,163 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:46,163 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:48,163 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:48,163 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:48,771 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:30:50,164 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:50,164 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:52,164 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:52,164 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:53,773 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:30:54,165 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:54,165 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:55,671 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:30:56,165 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:56,165 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:56,851 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/config.yaml
+2024-04-06 03:30:56,851 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:30:58,166 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:58,166 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:30:58,774 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:30:58,852 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:00,166 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:00,166 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:00,852 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:01,086 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:31:02,166 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:02,167 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:02,852 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:03,771 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:31:04,167 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:04,167 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:04,853 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:06,167 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:06,167 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:06,241 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:31:06,853 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:08,168 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:08,168 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:08,775 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:31:08,854 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:10,168 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:10,168 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:10,854 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:11,328 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:31:12,169 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:12,169 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:12,854 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:13,776 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:31:14,169 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:14,169 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:14,855 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:16,155 DEBUG   SystemMonitor:18866 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-06 03:31:16,155 DEBUG   SenderThread:18866 [sender.py:send():379] send: stats
+2024-04-06 03:31:16,170 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:16,170 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:16,442 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:31:16,855 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:18,170 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:18,170 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:18,771 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:31:18,856 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:20,170 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:20,171 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:20,856 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:21,593 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:31:22,171 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:22,171 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:22,856 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:23,777 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:31:24,171 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:24,171 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:24,857 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:26,172 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:26,172 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:26,748 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:31:26,857 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:28,172 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:28,172 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:28,778 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:31:28,857 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:30,172 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:30,172 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:30,858 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:31,820 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:31:32,173 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:32,173 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:32,858 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:33,771 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:31:34,173 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:34,173 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:34,859 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:36,173 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:36,174 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:36,859 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:36,893 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:31:38,174 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:38,174 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:38,818 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:31:38,860 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:40,174 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:40,174 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:40,860 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:41,965 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:31:42,174 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:42,174 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:42,861 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:43,819 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:31:44,175 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:44,175 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:44,861 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:46,156 DEBUG   SenderThread:18866 [sender.py:send():379] send: stats
+2024-04-06 03:31:46,175 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:46,175 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:46,861 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:47,000 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:31:48,175 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:48,175 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:48,771 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:31:48,862 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:50,176 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:50,176 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:50,862 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:52,150 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:31:52,176 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:52,176 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:52,862 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:53,820 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:31:54,176 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:54,177 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:54,863 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:56,177 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:56,177 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:56,863 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:31:57,299 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:31:58,178 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:58,178 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:31:58,821 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:31:58,864 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:00,178 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:00,178 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:00,864 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:00,902 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-06 03:32:00,902 DEBUG   SenderThread:18866 [sender.py:send():379] send: history
+2024-04-06 03:32:00,903 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: summary_record
+2024-04-06 03:32:00,903 INFO    SenderThread:18866 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-06 03:32:01,864 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_created():271] file/dir created: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/wandb-summary.json
+2024-04-06 03:32:02,179 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:02,179 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:02,342 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-06 03:32:02,342 DEBUG   SenderThread:18866 [sender.py:send():379] send: history
+2024-04-06 03:32:02,342 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: summary_record
+2024-04-06 03:32:02,342 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:32:02,343 INFO    SenderThread:18866 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-06 03:32:02,864 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/wandb-summary.json
+2024-04-06 03:32:02,865 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:03,771 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:32:04,179 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:04,179 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:04,865 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:06,179 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:06,180 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:06,865 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:07,373 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:32:08,180 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:08,180 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:08,822 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:32:08,866 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:10,180 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:10,180 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:10,866 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:12,181 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:12,181 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:12,426 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:32:12,867 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:13,823 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:32:14,181 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:14,181 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:14,867 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:16,156 DEBUG   SenderThread:18866 [sender.py:send():379] send: stats
+2024-04-06 03:32:16,182 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:16,182 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:16,867 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:17,469 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:32:18,182 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:18,182 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:18,771 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:32:18,868 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:20,182 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:20,183 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:20,868 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:22,183 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:22,184 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:22,522 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:32:22,869 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:23,824 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:32:24,184 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:24,186 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:24,869 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:26,186 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:26,186 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:26,869 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:27,590 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:32:28,186 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:28,186 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:28,825 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:32:28,870 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:30,187 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:30,187 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:30,870 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:32,187 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:32,187 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:32,623 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:32:32,871 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:33,772 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:32:34,187 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:34,187 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:34,871 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:36,188 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:36,188 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:36,871 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:37,665 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:32:38,188 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:38,188 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:38,826 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:32:38,872 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:40,188 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:40,188 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:40,872 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:42,189 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:42,189 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:42,719 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:32:42,873 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:43,827 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:32:44,189 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:44,189 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:44,873 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:46,157 DEBUG   SenderThread:18866 [sender.py:send():379] send: stats
+2024-04-06 03:32:46,189 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:46,189 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:46,873 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:47,796 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:32:48,190 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:48,190 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:48,772 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:32:48,874 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:50,190 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:50,190 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:50,874 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:52,190 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:52,190 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:52,875 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:52,900 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:32:53,829 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:32:54,191 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:54,191 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:54,875 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:56,191 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:56,191 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:56,876 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:58,004 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:32:58,191 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:58,191 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:32:58,439 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-06 03:32:58,439 DEBUG   SenderThread:18866 [sender.py:send():379] send: history
+2024-04-06 03:32:58,439 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: summary_record
+2024-04-06 03:32:58,440 INFO    SenderThread:18866 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-06 03:32:58,829 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:32:58,876 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/wandb-summary.json
+2024-04-06 03:32:58,876 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:32:59,893 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-06 03:32:59,893 DEBUG   SenderThread:18866 [sender.py:send():379] send: history
+2024-04-06 03:32:59,893 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: summary_record
+2024-04-06 03:32:59,893 INFO    SenderThread:18866 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-06 03:33:00,192 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:00,192 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:00,877 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/wandb-summary.json
+2024-04-06 03:33:00,877 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:02,192 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:02,192 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:02,877 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:03,032 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:33:03,772 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:33:04,193 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:04,193 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:04,878 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:06,193 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:06,193 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:06,878 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:08,089 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:33:08,194 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:08,194 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:08,831 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:33:08,878 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:10,194 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:10,194 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:10,879 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:12,195 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:12,195 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:12,879 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:13,137 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:33:13,831 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:33:14,195 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:14,195 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:14,880 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:16,157 DEBUG   SenderThread:18866 [sender.py:send():379] send: stats
+2024-04-06 03:33:16,195 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:16,196 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:16,880 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:18,192 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:33:18,196 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:18,196 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:18,772 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:33:18,880 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:20,196 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:20,196 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:20,881 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:22,196 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:22,196 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:22,881 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:23,212 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:33:23,833 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:33:24,197 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:24,197 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:24,882 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:26,197 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:26,197 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:26,882 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:28,197 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:28,197 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:28,306 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:33:28,833 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:33:28,882 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:30,198 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:30,198 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:30,883 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:32,198 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:32,198 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:32,883 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:33,357 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:33:33,772 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:33:34,198 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:34,198 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:34,884 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:36,199 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:36,199 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:36,884 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:38,199 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:38,199 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:38,404 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:33:38,835 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:33:38,884 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:40,199 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:40,199 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:40,885 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:42,200 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:42,200 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:42,885 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:43,451 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:33:43,835 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:33:44,200 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:44,200 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:44,886 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:46,157 DEBUG   SenderThread:18866 [sender.py:send():379] send: stats
+2024-04-06 03:33:46,200 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:46,200 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:46,886 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:48,201 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:48,201 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:48,475 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:33:48,772 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:33:48,887 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:50,201 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:50,201 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:50,887 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:52,050 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-06 03:33:52,051 DEBUG   SenderThread:18866 [sender.py:send():379] send: history
+2024-04-06 03:33:52,051 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: summary_record
+2024-04-06 03:33:52,051 INFO    SenderThread:18866 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-06 03:33:52,201 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:52,201 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:52,888 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/wandb-summary.json
+2024-04-06 03:33:52,888 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:53,493 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-06 03:33:53,494 DEBUG   SenderThread:18866 [sender.py:send():379] send: history
+2024-04-06 03:33:53,494 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: summary_record
+2024-04-06 03:33:53,494 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:33:53,494 INFO    SenderThread:18866 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-06 03:33:53,837 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:33:53,888 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/wandb-summary.json
+2024-04-06 03:33:54,202 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:54,202 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:54,888 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:54,928 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-06 03:33:54,928 DEBUG   SenderThread:18866 [sender.py:send():379] send: history
+2024-04-06 03:33:54,928 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: summary_record
+2024-04-06 03:33:54,929 INFO    SenderThread:18866 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-06 03:33:55,888 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/wandb-summary.json
+2024-04-06 03:33:55,888 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:33:56,202 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:56,202 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:58,202 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:58,202 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:33:58,838 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:33:58,929 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:34:00,203 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:00,203 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:02,203 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:02,203 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:03,772 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:34:03,930 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:34:04,203 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:04,204 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:06,204 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:06,204 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:08,204 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:08,204 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:08,839 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:34:08,931 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:34:10,205 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:10,205 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:12,205 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:12,205 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:13,840 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-06 03:34:14,205 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:14,205 ERROR   disk      :18866 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-04-06 03:34:14,440 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:34:14,443 DEBUG   SenderThread:18866 [sender.py:send():379] send: telemetry
+2024-04-06 03:34:14,443 DEBUG   SenderThread:18866 [sender.py:send():379] send: exit
+2024-04-06 03:34:14,443 INFO    SenderThread:18866 [sender.py:send_exit():586] handling exit code: 1
+2024-04-06 03:34:14,443 INFO    SenderThread:18866 [sender.py:send_exit():588] handling runtime: 238
+2024-04-06 03:34:14,443 INFO    SenderThread:18866 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-06 03:34:14,443 INFO    SenderThread:18866 [sender.py:send_exit():594] send defer
+2024-04-06 03:34:14,443 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:14,443 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-06 03:34:14,443 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:14,443 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-06 03:34:14,443 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 1
+2024-04-06 03:34:14,443 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:14,443 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-06 03:34:14,443 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:14,443 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-06 03:34:14,443 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 2
+2024-04-06 03:34:14,444 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:14,444 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-06 03:34:14,444 INFO    HandlerThread:18866 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-06 03:34:14,444 INFO    HandlerThread:18866 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-06 03:34:14,444 INFO    HandlerThread:18866 [interfaces.py:finish():202] Joined disk monitor
+2024-04-06 03:34:14,444 DEBUG   SystemMonitor:18866 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-06 03:34:14,444 DEBUG   SystemMonitor:18866 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-06 03:34:14,473 INFO    HandlerThread:18866 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-06 03:34:14,473 INFO    HandlerThread:18866 [interfaces.py:finish():202] Joined memory monitor
+2024-04-06 03:34:14,473 INFO    HandlerThread:18866 [interfaces.py:finish():202] Joined network monitor
+2024-04-06 03:34:14,473 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:14,473 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-06 03:34:14,473 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 3
+2024-04-06 03:34:14,473 DEBUG   SenderThread:18866 [sender.py:send():379] send: stats
+2024-04-06 03:34:14,474 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:14,474 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-06 03:34:14,474 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:14,474 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-06 03:34:14,474 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 4
+2024-04-06 03:34:14,474 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:14,474 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-06 03:34:14,474 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:14,474 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-06 03:34:14,474 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 5
+2024-04-06 03:34:14,474 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:14,474 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-06 03:34:14,474 DEBUG   SenderThread:18866 [sender.py:send():379] send: summary
+2024-04-06 03:34:14,474 INFO    SenderThread:18866 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-06 03:34:14,474 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:14,474 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-06 03:34:14,474 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 6
+2024-04-06 03:34:14,474 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:14,474 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-06 03:34:14,474 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:14,474 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-06 03:34:14,476 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:34:14,860 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 7
+2024-04-06 03:34:14,860 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:14,860 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-06 03:34:14,860 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:14,861 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-06 03:34:14,892 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/wandb-summary.json
+2024-04-06 03:34:14,893 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/config.yaml
+2024-04-06 03:34:14,893 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:34:15,443 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-06 03:34:15,893 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:34:17,530 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 8
+2024-04-06 03:34:17,530 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: poll_exit
+2024-04-06 03:34:17,531 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:17,531 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-06 03:34:17,532 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:17,532 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-06 03:34:17,532 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 9
+2024-04-06 03:34:17,532 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:17,533 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-06 03:34:17,533 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:17,533 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-06 03:34:17,533 INFO    SenderThread:18866 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-06 03:34:17,894 INFO    Thread-12 :18866 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:34:17,895 INFO    SenderThread:18866 [dir_watcher.py:finish():388] scan: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files
+2024-04-06 03:34:17,896 INFO    SenderThread:18866 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/requirements.txt requirements.txt
+2024-04-06 03:34:17,896 INFO    SenderThread:18866 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/wandb-metadata.json wandb-metadata.json
+2024-04-06 03:34:17,896 INFO    SenderThread:18866 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/wandb-summary.json wandb-summary.json
+2024-04-06 03:34:17,896 INFO    SenderThread:18866 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/config.yaml config.yaml
+2024-04-06 03:34:17,896 INFO    SenderThread:18866 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/conda-environment.yaml conda-environment.yaml
+2024-04-06 03:34:17,897 INFO    SenderThread:18866 [dir_watcher.py:finish():402] scan save: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log output.log
+2024-04-06 03:34:17,897 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 10
+2024-04-06 03:34:17,902 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:17,902 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-06 03:34:17,907 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:17,907 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-06 03:34:17,908 INFO    SenderThread:18866 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-06 03:34:18,444 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-06 03:34:18,445 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: poll_exit
+2024-04-06 03:34:18,490 INFO    wandb-upload_0:18866 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/requirements.txt
+2024-04-06 03:34:18,654 INFO    wandb-upload_2:18866 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/wandb-summary.json
+2024-04-06 03:34:18,751 INFO    wandb-upload_3:18866 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/config.yaml
+2024-04-06 03:34:18,797 INFO    wandb-upload_4:18866 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/conda-environment.yaml
+2024-04-06 03:34:19,039 INFO    wandb-upload_5:18866 [upload_job.py:push():131] Uploaded file /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/files/output.log
+2024-04-06 03:34:19,239 INFO    Thread-11 :18866 [sender.py:transition_state():614] send defer: 11
+2024-04-06 03:34:19,240 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:19,240 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-06 03:34:19,241 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:19,241 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-06 03:34:19,241 INFO    SenderThread:18866 [file_pusher.py:join():178] waiting for file pusher
+2024-04-06 03:34:19,243 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 12
+2024-04-06 03:34:19,244 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:19,244 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-06 03:34:19,244 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:19,245 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-06 03:34:19,245 INFO    SenderThread:18866 [file_stream.py:finish():614] file stream finish called
+2024-04-06 03:34:19,452 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-06 03:34:19,551 INFO    SenderThread:18866 [file_stream.py:finish():618] file stream finish is done
+2024-04-06 03:34:19,551 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 13
+2024-04-06 03:34:19,551 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: poll_exit
+2024-04-06 03:34:19,552 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:19,552 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-06 03:34:19,552 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 03:34:19,553 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:19,553 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-06 03:34:19,553 INFO    SenderThread:18866 [sender.py:transition_state():614] send defer: 14
+2024-04-06 03:34:19,554 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 03:34:19,554 INFO    HandlerThread:18866 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-06 03:34:19,554 DEBUG   SenderThread:18866 [sender.py:send():379] send: final
+2024-04-06 03:34:19,555 DEBUG   SenderThread:18866 [sender.py:send():379] send: footer
+2024-04-06 03:34:19,555 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: defer
+2024-04-06 03:34:19,555 INFO    SenderThread:18866 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-06 03:34:19,557 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-06 03:34:19,557 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: poll_exit
+2024-04-06 03:34:19,561 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 03:34:19,562 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: server_info
+2024-04-06 03:34:19,562 DEBUG   SenderThread:18866 [sender.py:send_request():406] send_request: server_info
+2024-04-06 03:34:19,605 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-06 03:34:19,605 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-06 03:34:19,861 DEBUG   HandlerThread:18866 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-06 03:34:19,861 INFO    HandlerThread:18866 [handler.py:finish():866] shutting down handler
+2024-04-06 03:34:20,563 INFO    WriterThread:18866 [datastore.py:close():296] close: /home/nxhoang/Work/HPE/src/model/wandb/run-20240406_033015-svlq4qan/run-svlq4qan.wandb
+2024-04-06 03:34:20,860 INFO    SenderThread:18866 [sender.py:finish():1546] shutting down sender
+2024-04-06 03:34:20,860 INFO    SenderThread:18866 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-06 03:34:20,860 INFO    SenderThread:18866 [file_pusher.py:join():178] waiting for file pusher

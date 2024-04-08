@@ -1,0 +1,7 @@
+2024-04-03 12:59:50,105 INFO    StreamThr :73851 [internal.py:wandb_internal():86] W&B internal server running at pid: 73851, started at: 2024-04-03 12:59:50.104545
+2024-04-03 12:59:50,106 DEBUG   HandlerThread:73851 [handler.py:handle_request():146] handle_request: status
+2024-04-03 12:59:50,112 INFO    WriterThread:73851 [datastore.py:open_for_write():87] open: /home/nxhoang/Work/HPE/src/model/wandb/run-20240403_125950-7jvuvzqq/run-7jvuvzqq.wandb
+2024-04-03 12:59:50,112 DEBUG   SenderThread:73851 [sender.py:send():378] send: header
+2024-04-03 12:59:50,112 DEBUG   SenderThread:73851 [sender.py:send():378] send: run
+2024-04-03 12:59:50,815 INFO    SenderThread:73851 [dir_watcher.py:__init__():211] watching files in: /home/nxhoang/Work/HPE/src/model/wandb/run-20240403_125950-7jvuvzqq/files
+2024-04-03 12:59:50,815 INFO    SenderThread:73851 [sender.py:_start_run_threads():1099] run started: 7jvuvzqq with start time 1712123990.103905

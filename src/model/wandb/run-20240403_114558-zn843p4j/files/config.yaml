@@ -1,0 +1,301 @@
+wandb_version: 1
+
+method:
+  desc: null
+  value: bayes
+metric:
+  desc: null
+  value:
+    goal: minimize
+    name: Estimator_Val_Loss
+parameters:
+  desc: null
+  value:
+    ae_batch_size:
+      values:
+      - 64
+      - 128
+      - 256
+      - 512
+    ae_n_epochs:
+      distribution: int_uniform
+      min: 100
+      max: 150
+    ae_lr:
+      distribution: log_uniform_values
+      min: 0.0001
+      max: 0.05
+    ae_momentum:
+      values:
+      - 0.5
+      - 0.6
+      - 0.7
+      - 0.8
+      - 0.9
+    ae_kernel_size_1:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    ae_kernel_size_2:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    ae_maxpooling_1:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    ae_maxpooling_2:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    ae_n_kernels_1:
+      distribution: int_uniform
+      min: 16
+      max: 64
+    ae_n_kernels_2:
+      distribution: int_uniform
+      min: 64
+      max: 256
+    est_batch_size:
+      values:
+      - 64
+      - 128
+      - 256
+      - 512
+    est_pool_dim:
+      value: time
+    est_dropout:
+      distribution: uniform
+      min: 0.1
+      max: 0.4
+    est_n_basis_kernels:
+      distribution: int_uniform
+      min: 16
+      max: 256
+    est_kernel_size_1:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    est_kernel_size_2:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    est_kernel_size_3:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    est_kernel_size_4:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    est_kernel_size_5:
+      distribution: int_uniform
+      min: 2
+      max: 7
+    est_n_kernels_1:
+      distribution: int_uniform
+      min: 16
+      max: 64
+    est_n_kernels_2:
+      distribution: int_uniform
+      min: 16
+      max: 64
+    est_n_kernels_3:
+      distribution: int_uniform
+      min: 64
+      max: 256
+    est_n_kernels_4:
+      distribution: int_uniform
+      min: 64
+      max: 256
+    est_n_kernels_5:
+      distribution: int_uniform
+      min: 64
+      max: 256
+    est_num_layers:
+      values:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+    est_temperature:
+      value:
+      - 30
+      - 31
+      - 32
+      - 33
+    est_maxpooling_1:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    est_maxpooling_2:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    est_maxpooling_3:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    est_maxpooling_4:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    est_maxpooling_5:
+      distribution: int_uniform
+      min: 2
+      max: 6
+    est_d_hidden:
+      distribution: int_uniform
+      min: 32
+      max: 256
+    cb_n_epochs:
+      distribution: int_uniform
+      min: 50
+      max: 150
+    cb_lr:
+      distribution: log_uniform_values
+      min: 0.001
+      max: 0.05
+    cb_momentum:
+      value: 0.9
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.10
+    cli_version: 0.16.4
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    start_time: 1712119558.0
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      3:
+      - 2
+      - 16
+      - 23
+      - 37
+      4: 3.8.10
+      5: 0.16.4
+      8:
+      - 1
+      - 5
+      13: linux-x86_64
+ae_batch_size:
+  desc: null
+  value: 64
+ae_kernel_size_1:
+  desc: null
+  value: 5
+ae_kernel_size_2:
+  desc: null
+  value: 3
+ae_lr:
+  desc: null
+  value: 0.01716304994440599
+ae_maxpooling_1:
+  desc: null
+  value: 2
+ae_maxpooling_2:
+  desc: null
+  value: 3
+ae_momentum:
+  desc: null
+  value: 0.8
+ae_n_epochs:
+  desc: null
+  value: 150
+ae_n_kernels_1:
+  desc: null
+  value: 21
+ae_n_kernels_2:
+  desc: null
+  value: 198
+cb_lr:
+  desc: null
+  value: 0.004091803425548739
+cb_momentum:
+  desc: null
+  value: 0.9
+cb_n_epochs:
+  desc: null
+  value: 119
+est_batch_size:
+  desc: null
+  value: 64
+est_d_hidden:
+  desc: null
+  value: 152
+est_dropout:
+  desc: null
+  value: 0.3711831963711863
+est_kernel_size_1:
+  desc: null
+  value: 2
+est_kernel_size_2:
+  desc: null
+  value: 6
+est_kernel_size_3:
+  desc: null
+  value: 2
+est_kernel_size_4:
+  desc: null
+  value: 6
+est_kernel_size_5:
+  desc: null
+  value: 4
+est_maxpooling_1:
+  desc: null
+  value: 6
+est_maxpooling_2:
+  desc: null
+  value: 3
+est_maxpooling_3:
+  desc: null
+  value: 2
+est_maxpooling_4:
+  desc: null
+  value: 6
+est_maxpooling_5:
+  desc: null
+  value: 2
+est_n_basis_kernels:
+  desc: null
+  value: 131
+est_n_kernels_1:
+  desc: null
+  value: 24
+est_n_kernels_2:
+  desc: null
+  value: 52
+est_n_kernels_3:
+  desc: null
+  value: 161
+est_n_kernels_4:
+  desc: null
+  value: 162
+est_n_kernels_5:
+  desc: null
+  value: 245
+est_num_layers:
+  desc: null
+  value: 2
+est_pool_dim:
+  desc: null
+  value: time
+est_temperature:
+  desc: null
+  value:
+  - 30
+  - 31
+  - 32
+  - 33

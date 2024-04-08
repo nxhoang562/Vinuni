@@ -1,0 +1,1 @@
+{"denoiser_train_loss": 0.0020734524221548913, "_timestamp": 1712292061.000046, "_runtime": 191.54688906669617, "_step": 6, "denoiser_val_loss": 0.001589904987038328, "Denoiser test result": 0.0015909689263655588, "_wandb": {"runtime": 199}}
