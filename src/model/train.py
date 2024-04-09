@@ -8,10 +8,10 @@ import time
 
 from torch import nn
 from torch.optim.lr_scheduler import LambdaLR
-from dataset import make_dataset, make_dataloader
+from model.ae_dataset import make_dataset, make_dataloader
 
-from orignial_dataset import make_dataset as original_make_dataset
-from orignial_dataset import make_dataloader as original_make_dataloader
+from model.est_dataset import make_dataset as original_make_dataset
+from model.est_dataset import make_dataloader as original_make_dataloader
 from sklearn.model_selection import train_test_split
 
 sys.path.append("/home/nxhoang/Work/HPE")

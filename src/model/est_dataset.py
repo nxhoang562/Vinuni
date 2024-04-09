@@ -306,7 +306,14 @@ class MMFi_Dataset(Dataset):
         sample['input'] = cv2.resize(sample['input'], (136, 32), interpolation=cv2.INTER_NEAREST)
         sample['input'] = sample['input'].transpose(2, 1, 0)
 
-        return torch.from_numpy(sample['input']).float(), sample['output'].float()
+        sample['input_noise'] = self.add_noise(sample['input'])
+
+        return torch.from_numpy(sample['input_noise']).float(), sample['output'].float()
+    
+    def add_noise(self, signal):
+        signal = signal + np.random.randn(*signal.shape)*0.3
+
+        return signal
 
 
 def make_dataset(dataset_root, config):
