@@ -9,7 +9,7 @@ parameters:
   ae_batch_size:
     values: [64,128,256,512]
   ae_n_epochs: 
-    value: 3
+    value: 50
     # distribution: int_uniform
     # min: 100
     # max: 150 
