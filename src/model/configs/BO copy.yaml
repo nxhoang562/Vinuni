@@ -9,14 +9,14 @@ parameters:
   ae_batch_size:
     values: [64,128,256,512]
   ae_n_epochs: 
-    value: 50
-    # distribution: int_uniform
-    # min: 100
-    # max: 150 
+    # value: 50
+    distribution: int_uniform
+    min: 50
+    max: 150 
   ae_lr:
     distribution: log_uniform_values
     min: 0.0001
-    max: 0.05
+    max: 0.003
   ae_momentum: #adam thi co weight decay 
     values: [0.5,0.6,0.7,0.8,0.9] #0.5-0.7 is beneficial for noisy datasets 
  
@@ -40,11 +40,11 @@ parameters:
     # distribution: int_uniform 
     # min: 2
     # max: 5
-  ae_maxpooling_2:
-    values: [2,3]
-    # distribution: int_uniform
-    # min: 2
-    # max: 6 
+  # ae_maxpooling_2:
+  #   values: [2,3]
+  #   # distribution: int_uniform
+  #   # min: 2
+  #   # max: 6 
 
   ae_n_kernels_1:
     distribution: int_uniform 
@@ -54,6 +54,8 @@ parameters:
     distribution: int_uniform
     min: 32
     max: 256
+
+
 
 #Estimator configurations 
   est_batch_size:
@@ -75,7 +77,7 @@ parameters:
   est_kernel_size_1:
     distribution: int_uniform 
     min: 2
-    max: 4
+    max: 3
   est_kernel_size_2:
     distribution: int_uniform 
     min: 2
@@ -84,14 +86,14 @@ parameters:
     distribution: int_uniform 
     min: 2
     max: 4 
-  est_kernel_size_4:
-    distribution: int_uniform 
-    min: 2
-    max: 4  
-  est_kernel_size_5:
-    distribution: int_uniform 
-    min: 2
-    max: 4  
+  # est_kernel_size_4:
+  #   distribution: int_uniform 
+  #   min: 2
+  #   max: 4  
+  # est_kernel_size_5:
+  #   distribution: int_uniform 
+  #   min: 2
+  #   max: 4  
 
   est_n_kernels_1:
     distribution: int_uniform 
@@ -105,25 +107,23 @@ parameters:
     distribution: int_uniform 
     min: 64
     max: 128 
-  est_n_kernels_4:
-    distribution: int_uniform 
-    min: 64
-    max: 128 
-  est_n_kernels_5:
-    distribution: int_uniform 
-    min: 64
-    max: 128
+  # est_n_kernels_4:
+  #   distribution: int_uniform 
+  #   min: 64
+  #   max: 128 
+  # est_n_kernels_5:
+  #   distribution: int_uniform 
+  #   min: 64
+  #   max: 128
   
   est_num_layers:
-    values: [1,2]
+    values: [1,2,3]
 
   est_temperature:
     values: [30,31,32,33]
   
   est_maxpooling_1:
-    distribution: int_uniform 
-    min: 2
-    max: 3
+    value: 2
   
   est_maxpooling_2:
     distribution: int_uniform 
@@ -135,15 +135,15 @@ parameters:
     min: 2
     max: 3
 
-  est_maxpooling_4:
-    distribution: int_uniform 
-    min: 2
-    max: 3
+  # est_maxpooling_4:
+  #   distribution: int_uniform 
+  #   min: 2
+  #   max: 3
 
-  est_maxpooling_5:
-    distribution: int_uniform 
-    min: 2
-    max: 3
+  # est_maxpooling_5:
+  #   distribution: int_uniform 
+  #   min: 2
+  #   max: 3
   
   est_d_hidden:
     distribution: int_uniform
@@ -156,16 +156,16 @@ parameters:
       
   # Combined model configs
   cb_n_epochs:
-    value: 100
-    # distribution: int_uniform
-    # min: 50
-    # max: 150
+  # value: 100
+    distribution: int_uniform
+    min: 50
+    max: 150
   cb_lr:
     distribution: log_uniform_values
-    min: 0.001
+    min: 0.0001
     max: 0.05
   cb_momentum:
-      value: 0.9
+      values: [0.8,0.9]
   
 
 

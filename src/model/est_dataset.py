@@ -307,27 +307,32 @@ class MMFi_Dataset(Dataset):
         sample['input'] = sample['input'].transpose(2, 1, 0)
 
         sample['input_noise'] = self.add_noise(sample['input'])
+
+        # print(sample['input_noise'])
         
-        sample['input_noise_norm'] = self.min_max_scaling( sample['input_noise'])
-        return torch.from_numpy(sample['input_noise']).float(), sample['output'].float()
+        sample['input_noise_norm'] = self.min_max_scaling(sample['input_noise'])
+
+        # print(sample['input_noise_norm'])
+
+        return torch.from_numpy(sample['input_noise_norm']).float(), sample['output'].float()
     
     def add_noise(self, signal):
         signal = signal + np.random.randn(*signal.shape)*0.1
 
         return signal
     
-    def min_max_scaling (data):
+    def min_max_scaling (self, data):
         """
         shape data: [channels, freqs, time]
         return: normalize data by each channel 
         """
-        num_channels = data.size(0)
+        num_channels = data.shape[0]
 
-        normalized_data = torch.zeros_like(data)
+        normalized_data = np.zeros_like(data)
 
         for channel in range(num_channels):
-            min_val = torch.min(data[channel])
-            max_val = torch.max(data[channel]) 
+            min_val = np.min(data[channel])
+            max_val = np.max(data[channel]) 
             # Perform min-max normalization
             normalized_data[channel] = (data[channel] - min_val) / (max_val - min_val)
 

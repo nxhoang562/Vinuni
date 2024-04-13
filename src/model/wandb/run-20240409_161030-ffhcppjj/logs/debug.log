@@ -29,3 +29,13 @@ config: {'method': 'bayes', 'metric': {'goal': 'minimize', 'name': 'estimator_va
 2024-04-09 16:10:34,585 INFO    Thread-5  :7117 [wandb_run.py:_redirect():2255] Wrapping output streams.
 2024-04-09 16:10:34,585 INFO    Thread-5  :7117 [wandb_run.py:_redirect():2280] Redirects installed.
 2024-04-09 16:10:34,585 INFO    Thread-5  :7117 [wandb_init.py:init():842] run started, returning control to user process
+2024-04-09 16:43:58,306 INFO    Thread-5  :7117 [wandb_run.py:_finish():2064] finishing run nxhoang/Denoising + HPE/ffhcppjj
+2024-04-09 16:43:58,306 INFO    Thread-5  :7117 [jupyter.py:save_history():445] not saving jupyter history
+2024-04-09 16:43:58,306 INFO    Thread-5  :7117 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-04-09 16:43:58,306 INFO    Thread-5  :7117 [wandb_init.py:_jupyter_teardown():449] cleaning up jupyter logic
+2024-04-09 16:43:58,306 INFO    Thread-5  :7117 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 1
+2024-04-09 16:43:58,306 INFO    Thread-5  :7117 [wandb_run.py:_restore():2287] restore
+2024-04-09 16:43:58,306 INFO    Thread-5  :7117 [wandb_run.py:_restore():2293] restore done
+2024-04-09 16:44:04,689 INFO    Thread-5  :7117 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-09 16:44:04,690 INFO    Thread-5  :7117 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-09 16:44:04,701 INFO    Thread-5  :7117 [wandb_run.py:_footer_sync_info():3895] logging synced files
