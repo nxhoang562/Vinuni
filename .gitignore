@@ -1,0 +1,7 @@
+Data/
+Processed_Data/
+metafi/
+__pycache__/
+.ipynb_checkpoints/
+
+# name_folder/, name_file; 

@@ -1,0 +1,10 @@
+
+START TRAINING DENOISER AT:  622305313858714
+END TRAINING DENOISER AT <built-in function perf_counter_ns>
+100%|██████████| 130/130 [00:01<00:00, 98.23it/s]
+Traceback (most recent call last):
+  File "<ipython-input-15-2545dc66011a>", line 92, in training
+    optimizer_cb = torch.optim.SGD(combined_model.parameters(), lr=config['cb_lr'], momentum=config['cb_momentum'])
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/wandb/sdk/wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+KeyError: 'cb_lr'

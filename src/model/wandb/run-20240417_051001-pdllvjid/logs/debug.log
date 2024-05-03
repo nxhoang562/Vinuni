@@ -1,0 +1,43 @@
+2024-04-17 05:10:01,756 INFO    Thread-20 :40486 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-17 05:10:01,756 INFO    Thread-20 :40486 [wandb_setup.py:_flush():76] Configure stats pid to 40486
+2024-04-17 05:10:01,756 INFO    Thread-20 :40486 [wandb_setup.py:_flush():76] Loading settings from /home/nxhoang/.config/wandb/settings
+2024-04-17 05:10:01,756 INFO    Thread-20 :40486 [wandb_setup.py:_flush():76] Loading settings from /home/nxhoang/Work/HPE-VinUni/src/model/wandb/settings
+2024-04-17 05:10:01,756 INFO    Thread-20 :40486 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'Denoising + HPE', 'entity': 'nxhoang', 'root_dir': '/home/nxhoang/Work/HPE-VinUni/src/model', 'run_id': 'pdllvjid', 'sweep_param_path': '/home/nxhoang/Work/HPE-VinUni/src/model/wandb/sweep-at4ejb6r/config-pdllvjid.yaml', 'sweep_id': 'at4ejb6r'}
+2024-04-17 05:10:01,756 INFO    Thread-20 :40486 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-17 05:10:01,757 INFO    Thread-20 :40486 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-17 05:10:01,757 INFO    Thread-20 :40486 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-17 05:10:01,757 INFO    Thread-20 :40486 [wandb_init.py:_log_setup():521] Logging user logs to /home/nxhoang/Work/HPE-VinUni/src/model/wandb/run-20240417_051001-pdllvjid/logs/debug.log
+2024-04-17 05:10:01,757 INFO    Thread-20 :40486 [wandb_init.py:_log_setup():522] Logging internal logs to /home/nxhoang/Work/HPE-VinUni/src/model/wandb/run-20240417_051001-pdllvjid/logs/debug-internal.log
+2024-04-17 05:10:01,757 INFO    Thread-20 :40486 [wandb_init.py:_jupyter_setup():467] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f6e500f8f50>
+2024-04-17 05:10:01,758 INFO    Thread-20 :40486 [wandb_init.py:init():561] calling init triggers
+2024-04-17 05:10:01,758 INFO    Thread-20 :40486 [wandb_init.py:init():569] wandb.init called with sweep_config: {'ae_batch_size': 512, 'ae_lr': 0.000620252354341047, 'ae_momentum': 0.5, 'ae_n_epochs': 52, 'ae_n_kernels_1': 54, 'ae_n_kernels_2': 226, 'cb_lr': 0.0003647124126601642, 'cb_momentum': 0.8, 'cb_n_epochs': 51, 'est_batch_size': 128, 'est_d_hidden': 224, 'est_dropout': 0.17417985998821903, 'est_kernel_size_1': 3, 'est_kernel_size_2': 2, 'est_kernel_size_3': 2, 'est_maxpooling_1': 2, 'est_maxpooling_2': 2, 'est_maxpooling_3': 2, 'est_n_basis_kernels': 83, 'est_n_kernels_1': 11, 'est_n_kernels_2': 56, 'est_n_kernels_3': 121, 'est_num_layers': 3, 'est_temperature': 33}
+config: {'method': 'bayes', 'metric': {'goal': 'minimize', 'name': 'estimator_val_loss'}, 'parameters': {'ae_batch_size': {'values': [64, 128, 256, 512]}, 'ae_n_epochs': {'distribution': 'int_uniform', 'min': 50, 'max': 150}, 'ae_lr': {'distribution': 'log_uniform_values', 'min': 0.0001, 'max': 0.003}, 'ae_momentum': {'values': [0.5, 0.6, 0.7, 0.8, 0.9]}, 'ae_n_kernels_1': {'distribution': 'int_uniform', 'min': 16, 'max': 64}, 'ae_n_kernels_2': {'distribution': 'int_uniform', 'min': 32, 'max': 256}, 'est_batch_size': {'values': [64, 128, 256, 512]}, 'est_dropout': {'distribution': 'uniform', 'min': 0.1, 'max': 0.4}, 'est_n_basis_kernels': {'distribution': 'int_uniform', 'min': 16, 'max': 256}, 'est_kernel_size_1': {'distribution': 'int_uniform', 'min': 2, 'max': 3}, 'est_kernel_size_2': {'distribution': 'int_uniform', 'min': 2, 'max': 4}, 'est_kernel_size_3': {'distribution': 'int_uniform', 'min': 2, 'max': 4}, 'est_n_kernels_1': {'distribution': 'int_uniform', 'min': 8, 'max': 32}, 'est_n_kernels_2': {'distribution': 'int_uniform', 'min': 16, 'max': 64}, 'est_n_kernels_3': {'distribution': 'int_uniform', 'min': 64, 'max': 128}, 'est_num_layers': {'values': [1, 2, 3]}, 'est_temperature': {'values': [30, 31, 32, 33]}, 'est_maxpooling_1': {'value': 2}, 'est_maxpooling_2': {'distribution': 'int_uniform', 'min': 2, 'max': 3}, 'est_maxpooling_3': {'distribution': 'int_uniform', 'min': 2, 'max': 3}, 'est_d_hidden': {'distribution': 'int_uniform', 'min': 32, 'max': 256}, 'cb_n_epochs': {'distribution': 'int_uniform', 'min': 50, 'max': 150}, 'cb_lr': {'distribution': 'log_uniform_values', 'min': 0.0001, 'max': 0.05}, 'cb_momentum': {'values': [0.8, 0.9]}}}
+2024-04-17 05:10:01,758 INFO    Thread-20 :40486 [wandb_init.py:init():611] starting backend
+2024-04-17 05:10:01,758 INFO    Thread-20 :40486 [wandb_init.py:init():615] setting up manager
+2024-04-17 05:10:01,765 INFO    Thread-20 :40486 [backend.py:_multiprocessing_setup():107] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-17 05:10:01,766 INFO    Thread-20 :40486 [wandb_init.py:init():623] backend started and connected
+2024-04-17 05:10:01,775 INFO    Thread-20 :40486 [wandb_run.py:_config_callback():1347] config_cb None None {'ae_batch_size': 512, 'ae_lr': 0.000620252354341047, 'ae_momentum': 0.5, 'ae_n_epochs': 52, 'ae_n_kernels_1': 54, 'ae_n_kernels_2': 226, 'cb_lr': 0.0003647124126601642, 'cb_momentum': 0.8, 'cb_n_epochs': 51, 'est_batch_size': 128, 'est_d_hidden': 224, 'est_dropout': 0.17417985998821903, 'est_kernel_size_1': 3, 'est_kernel_size_2': 2, 'est_kernel_size_3': 2, 'est_maxpooling_1': 2, 'est_maxpooling_2': 2, 'est_maxpooling_3': 2, 'est_n_basis_kernels': 83, 'est_n_kernels_1': 11, 'est_n_kernels_2': 56, 'est_n_kernels_3': 121, 'est_num_layers': 3, 'est_temperature': 33}
+2024-04-17 05:10:01,776 INFO    Thread-20 :40486 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-04-17 05:10:01,776 INFO    Thread-20 :40486 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-04-17 05:10:01,776 INFO    Thread-20 :40486 [wandb_init.py:init():715] updated telemetry
+2024-04-17 05:10:02,099 INFO    Thread-20 :40486 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-17 05:10:02,785 INFO    Thread-20 :40486 [wandb_run.py:_on_init():2357] communicating current version
+2024-04-17 05:10:03,140 INFO    Thread-20 :40486 [wandb_run.py:_on_init():2366] got version response 
+2024-04-17 05:10:03,140 INFO    Thread-20 :40486 [wandb_init.py:init():799] starting run threads in backend
+2024-04-17 05:10:05,921 INFO    Thread-20 :40486 [wandb_run.py:_console_start():2335] atexit reg
+2024-04-17 05:10:05,921 INFO    Thread-20 :40486 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-04-17 05:10:05,921 INFO    Thread-20 :40486 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-04-17 05:10:05,921 INFO    Thread-20 :40486 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-04-17 05:10:05,921 INFO    Thread-20 :40486 [wandb_init.py:init():842] run started, returning control to user process
+2024-04-17 05:35:13,245 ERROR   Thread-4  :40486 [internal_api.py:execute():373] 502 response executing GraphQL.
+2024-04-17 05:35:13,245 ERROR   Thread-4  :40486 [internal_api.py:execute():374] 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+

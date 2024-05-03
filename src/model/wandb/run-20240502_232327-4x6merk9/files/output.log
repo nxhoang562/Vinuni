@@ -1,0 +1,14 @@
+
+START TRAINING DENOISER AT:  623325890989154
+END TRAINING DENOISER AT <built-in function perf_counter_ns>
+
+100%|██████████| 33/33 [00:02<00:00, 13.62it/s]
+START TRAINING ESTIMATOR AT:  623422365549726
+Traceback (most recent call last):
+  File "<ipython-input-15-403568b09956>", line 113, in training
+    trainer_cb.val_epoch()
+  File "<ipython-input-8-3c672007649c>", line 241, in val_epoch
+    self.save_model()
+  File "<ipython-input-8-3c672007649c>", line 319, in save_model
+    state_dict["mpjpe"] = self.metric[self.val_epoch_idx]["mpjpe"]
+KeyError: 'mpjpe'

@@ -1,0 +1,11 @@
+
+START TRAINING DENOISER AT:  642912542789842
+END TRAINING DENOISER AT <built-in function perf_counter_ns>
+
+100%|██████████| 260/260 [00:02<00:00, 126.17it/s]
+START TRAINING ESTIMATOR AT:  645603391313091
+  3%|▎         | 2/65 [00:00<00:04, 13.10it/s]
+
+
+
+100%|██████████| 65/65 [00:05<00:00, 12.86it/s]

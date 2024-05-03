@@ -1,0 +1,207 @@
+{
+    "os": "Linux-5.15.0-105-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.6",
+    "heartbeatAt": "2024-04-26T17:22:36.300391",
+    "startedAt": "2024-04-26T17:22:33.987065",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "git@github.com:Hoang-nx/HPE-VinUni.git",
+        "commit": "c196c6adbcb42aad0c51ca97340a674f1fda7c02"
+    },
+    "email": "nxhoang562@gmail.com",
+    "root": "/home/nxhoang/Work/HPE-VinUni",
+    "host": "nxhoang",
+    "username": "nxhoang",
+    "executable": "/home/nxhoang/anaconda3/bin/python",
+    "cpu_count": 24,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 1076.2193125,
+        "min": 800.0,
+        "max": 4937.5
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1061.855,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 999.325,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 1077.957,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 1059.554,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 1094.667,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 1073.244,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 1090.049,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 1100.537,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 1096.313,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1100.563,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1085.475,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 893.449,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1092.173,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 1099.052,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 1089.653,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 974.278,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 1080.03,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1063.885,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1044.952,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 947.091,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1068.727,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1008.974,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1099.998,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1091.043,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1099.868,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 980.728,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1098.107,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1099.515,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1099.595,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1100.188,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1099.728,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1099.918,
+            "min": 800.0,
+            "max": 4300.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 533.9640350341797,
+            "used": 364.91223526000977
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4070",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4070",
+            "memory_total": 12878610432
+        }
+    ],
+    "memory": {
+        "total": 31.10809326171875
+    }
+}

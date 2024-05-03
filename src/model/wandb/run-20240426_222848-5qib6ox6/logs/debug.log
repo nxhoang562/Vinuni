@@ -1,0 +1,60 @@
+2024-04-26 22:28:48,168 INFO    Thread-11 :29956 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-26 22:28:48,168 INFO    Thread-11 :29956 [wandb_setup.py:_flush():76] Configure stats pid to 29956
+2024-04-26 22:28:48,168 INFO    Thread-11 :29956 [wandb_setup.py:_flush():76] Loading settings from /home/nxhoang/.config/wandb/settings
+2024-04-26 22:28:48,168 INFO    Thread-11 :29956 [wandb_setup.py:_flush():76] Loading settings from /home/nxhoang/Work/HPE-VinUni/src/model/wandb/settings
+2024-04-26 22:28:48,168 INFO    Thread-11 :29956 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'Denoising + HPE', 'entity': 'nxhoang', 'root_dir': '/home/nxhoang/Work/HPE-VinUni/src/model', 'run_id': '5qib6ox6', 'sweep_param_path': '/home/nxhoang/Work/HPE-VinUni/src/model/wandb/sweep-tkl45sy4/config-5qib6ox6.yaml', 'sweep_id': 'tkl45sy4'}
+2024-04-26 22:28:48,168 INFO    Thread-11 :29956 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-26 22:28:48,169 INFO    Thread-11 :29956 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-26 22:28:48,169 INFO    Thread-11 :29956 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-26 22:28:48,169 INFO    Thread-11 :29956 [wandb_init.py:_log_setup():521] Logging user logs to /home/nxhoang/Work/HPE-VinUni/src/model/wandb/run-20240426_222848-5qib6ox6/logs/debug.log
+2024-04-26 22:28:48,169 INFO    Thread-11 :29956 [wandb_init.py:_log_setup():522] Logging internal logs to /home/nxhoang/Work/HPE-VinUni/src/model/wandb/run-20240426_222848-5qib6ox6/logs/debug-internal.log
+2024-04-26 22:28:48,169 INFO    Thread-11 :29956 [wandb_init.py:_jupyter_setup():467] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f32b60d0fd0>
+2024-04-26 22:28:48,170 INFO    Thread-11 :29956 [wandb_init.py:init():561] calling init triggers
+2024-04-26 22:28:48,170 INFO    Thread-11 :29956 [wandb_init.py:init():569] wandb.init called with sweep_config: {'ae_batch_size': 128, 'ae_lr': 0.0006042822415130494, 'ae_momentum': 0.6, 'ae_n_epochs': 88, 'ae_n_kernels_1': 64, 'ae_n_kernels_2': 141, 'cb_lr': 0.0013761362917254453, 'cb_momentum': 0.9, 'cb_n_epochs': 103, 'est_batch_size': 128, 'est_d_hidden': 239, 'est_dropout': 0.1654902870759302, 'est_kernel_size_1': 3, 'est_kernel_size_2': 3, 'est_kernel_size_3': 4, 'est_maxpooling_1': 2, 'est_maxpooling_2': 3, 'est_maxpooling_3': 3, 'est_n_basis_kernels': 32, 'est_n_kernels_1': 10, 'est_n_kernels_2': 52, 'est_n_kernels_3': 66, 'est_num_layers': 3, 'est_temperature': 33}
+config: {'method': 'bayes', 'metric': {'goal': 'minimize', 'name': 'estimator_val_loss'}, 'parameters': {'ae_batch_size': {'values': [64, 128, 256, 512]}, 'ae_n_epochs': {'distribution': 'int_uniform', 'min': 50, 'max': 150}, 'ae_lr': {'distribution': 'log_uniform_values', 'min': 0.0001, 'max': 0.003}, 'ae_momentum': {'values': [0.5, 0.6, 0.7, 0.8, 0.9]}, 'ae_n_kernels_1': {'distribution': 'int_uniform', 'min': 16, 'max': 64}, 'ae_n_kernels_2': {'distribution': 'int_uniform', 'min': 32, 'max': 256}, 'est_batch_size': {'values': [64, 128, 256, 512]}, 'est_dropout': {'distribution': 'uniform', 'min': 0.1, 'max': 0.4}, 'est_n_basis_kernels': {'distribution': 'int_uniform', 'min': 16, 'max': 256}, 'est_kernel_size_1': {'distribution': 'int_uniform', 'min': 2, 'max': 3}, 'est_kernel_size_2': {'distribution': 'int_uniform', 'min': 2, 'max': 4}, 'est_kernel_size_3': {'distribution': 'int_uniform', 'min': 2, 'max': 4}, 'est_n_kernels_1': {'distribution': 'int_uniform', 'min': 8, 'max': 32}, 'est_n_kernels_2': {'distribution': 'int_uniform', 'min': 16, 'max': 64}, 'est_n_kernels_3': {'distribution': 'int_uniform', 'min': 64, 'max': 128}, 'est_num_layers': {'values': [1, 2, 3]}, 'est_temperature': {'values': [30, 31, 32, 33]}, 'est_maxpooling_1': {'value': 2}, 'est_maxpooling_2': {'distribution': 'int_uniform', 'min': 2, 'max': 3}, 'est_maxpooling_3': {'distribution': 'int_uniform', 'min': 2, 'max': 3}, 'est_d_hidden': {'distribution': 'int_uniform', 'min': 32, 'max': 256}, 'cb_n_epochs': {'distribution': 'int_uniform', 'min': 50, 'max': 150}, 'cb_lr': {'distribution': 'log_uniform_values', 'min': 0.0001, 'max': 0.05}, 'cb_momentum': {'values': [0.8, 0.9]}}}
+2024-04-26 22:28:48,170 INFO    Thread-11 :29956 [wandb_init.py:init():611] starting backend
+2024-04-26 22:28:48,170 INFO    Thread-11 :29956 [wandb_init.py:init():615] setting up manager
+2024-04-26 22:28:48,180 INFO    Thread-11 :29956 [backend.py:_multiprocessing_setup():107] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-26 22:28:48,181 INFO    Thread-11 :29956 [wandb_init.py:init():623] backend started and connected
+2024-04-26 22:28:48,195 INFO    Thread-11 :29956 [wandb_run.py:_config_callback():1347] config_cb None None {'ae_batch_size': 128, 'ae_lr': 0.0006042822415130494, 'ae_momentum': 0.6, 'ae_n_epochs': 88, 'ae_n_kernels_1': 64, 'ae_n_kernels_2': 141, 'cb_lr': 0.0013761362917254453, 'cb_momentum': 0.9, 'cb_n_epochs': 103, 'est_batch_size': 128, 'est_d_hidden': 239, 'est_dropout': 0.1654902870759302, 'est_kernel_size_1': 3, 'est_kernel_size_2': 3, 'est_kernel_size_3': 4, 'est_maxpooling_1': 2, 'est_maxpooling_2': 3, 'est_maxpooling_3': 3, 'est_n_basis_kernels': 32, 'est_n_kernels_1': 10, 'est_n_kernels_2': 52, 'est_n_kernels_3': 66, 'est_num_layers': 3, 'est_temperature': 33}
+2024-04-26 22:28:48,196 INFO    Thread-11 :29956 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-04-26 22:28:48,196 INFO    Thread-11 :29956 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-04-26 22:28:48,196 INFO    Thread-11 :29956 [wandb_init.py:init():715] updated telemetry
+2024-04-26 22:28:48,488 INFO    Thread-11 :29956 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-26 22:28:49,309 INFO    Thread-11 :29956 [wandb_run.py:_on_init():2357] communicating current version
+2024-04-26 22:28:49,571 INFO    Thread-11 :29956 [wandb_run.py:_on_init():2366] got version response 
+2024-04-26 22:28:49,572 INFO    Thread-11 :29956 [wandb_init.py:init():799] starting run threads in backend
+2024-04-26 22:28:52,497 INFO    Thread-11 :29956 [wandb_run.py:_console_start():2335] atexit reg
+2024-04-26 22:28:52,497 INFO    Thread-11 :29956 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-04-26 22:28:52,497 INFO    Thread-11 :29956 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-04-26 22:28:52,497 INFO    Thread-11 :29956 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-04-26 22:28:52,497 INFO    Thread-11 :29956 [wandb_init.py:init():842] run started, returning control to user process
+2024-04-26 23:41:00,453 ERROR   Thread-4  :29956 [internal_api.py:execute():373] 500 response executing GraphQL.
+2024-04-26 23:41:00,453 ERROR   Thread-4  :29956 [internal_api.py:execute():374] {"error":"context deadline exceeded"}
+2024-04-26 23:41:00,453 INFO    Thread-4  :29956 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: https://api.wandb.ai/graphql
+2024-04-27 00:14:58,940 ERROR   Thread-4  :29956 [internal_api.py:execute():373] 500 response executing GraphQL.
+2024-04-27 00:14:58,940 ERROR   Thread-4  :29956 [internal_api.py:execute():374] {"errors":[{"message":"context deadline exceeded"}]}
+2024-04-27 00:22:18,724 INFO    Thread-11 :29956 [wandb_run.py:_finish():2064] finishing run nxhoang/Denoising + HPE/5qib6ox6
+2024-04-27 00:22:18,724 INFO    Thread-11 :29956 [jupyter.py:save_history():445] not saving jupyter history
+2024-04-27 00:22:18,724 INFO    Thread-11 :29956 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-04-27 00:22:18,724 INFO    Thread-11 :29956 [wandb_init.py:_jupyter_teardown():449] cleaning up jupyter logic
+2024-04-27 00:22:18,724 INFO    Thread-11 :29956 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 1
+2024-04-27 00:22:18,724 INFO    Thread-11 :29956 [wandb_run.py:_restore():2287] restore
+2024-04-27 00:22:18,724 INFO    Thread-11 :29956 [wandb_run.py:_restore():2293] restore done
+2024-04-27 00:22:29,460 INFO    Thread-11 :29956 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-27 00:22:29,461 INFO    Thread-11 :29956 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-27 00:22:29,473 INFO    Thread-11 :29956 [wandb_run.py:_footer_sync_info():3895] logging synced files

@@ -1,0 +1,5 @@
+2024-05-02 23:06:05,726 INFO    StreamThr :118045 [internal.py:wandb_internal():89] W&B internal server running at pid: 118045, started at: 2024-05-02 23:06:05.726519
+2024-05-02 23:06:05,728 DEBUG   HandlerThread:118045 [handler.py:handle_request():146] handle_request: status
+2024-05-02 23:06:05,739 INFO    WriterThread:118045 [datastore.py:open_for_write():87] open: /home/nxhoang/Work/HPE-VinUni/src/model/wandb/run-20240502_230605-9zobfcvw/run-9zobfcvw.wandb
+2024-05-02 23:06:05,739 DEBUG   SenderThread:118045 [sender.py:send():379] send: header
+2024-05-02 23:06:05,832 DEBUG   SenderThread:118045 [sender.py:send():379] send: run

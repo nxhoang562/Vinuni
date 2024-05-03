@@ -1,0 +1,33 @@
+
+START TRAINING DENOISER AT:  622940183488117
+END TRAINING DENOISER AT <built-in function perf_counter_ns>
+100%|██████████| 130/130 [00:00<00:00, 152.03it/s]
+/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/init.py:405: UserWarning: Initializing zero-element tensors is a no-op
+  warnings.warn("Initializing zero-element tensors is a no-op")
+Traceback (most recent call last):
+  File "<ipython-input-15-403568b09956>", line 112, in training
+    trainer_cb.train_epoch()
+  File "<ipython-input-8-3c672007649c>", line 124, in train_epoch
+    predict = self.model(data)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "<ipython-input-7-6d35d4b3509a>", line 12, in forward
+    output = self.predictor(encoded)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "<ipython-input-6-1af7ecd8290d>", line 105, in forward
+    x = self.cnn(x)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/pooling.py", line 168, in forward
+    return_indices=self.return_indices)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/_jit_internal.py", line 485, in fn
+    return if_false(*args, **kwargs)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/functional.py", line 782, in _max_pool2d
+    return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+RuntimeError: Given input size: (109x1x5). Calculated output size: (109x0x1). Output size is too small
+START TRAINING ESTIMATOR AT:  623024784351965

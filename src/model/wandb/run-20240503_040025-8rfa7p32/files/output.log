@@ -1,0 +1,39 @@
+
+START TRAINING DENOISER AT:  639949218461524
+END TRAINING DENOISER AT <built-in function perf_counter_ns>
+100%|██████████| 65/65 [00:02<00:00, 25.69it/s]
+/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/init.py:405: UserWarning: Initializing zero-element tensors is a no-op
+  warnings.warn("Initializing zero-element tensors is a no-op")
+START TRAINING ESTIMATOR AT:  642883258620190
+Traceback (most recent call last):
+  File "<ipython-input-15-403568b09956>", line 112, in training
+    trainer_cb.train_epoch()
+  File "<ipython-input-8-279835af6707>", line 124, in train_epoch
+    predict = self.model(data)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "<ipython-input-7-6d35d4b3509a>", line 12, in forward
+    output = self.predictor(encoded)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "<ipython-input-6-1af7ecd8290d>", line 105, in forward
+    x = self.cnn(x)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "<ipython-input-4-01e62b4567c2>", line 35, in forward
+    softmax_attention = self.attention(x).unsqueeze(2).unsqueeze(4)    # size : [bs, n_ker, 1, freqs, 1]
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "<ipython-input-4-01e62b4567c2>", line 105, in forward
+    x = self.conv1d1(x)               #x size : [bs, hid_chan, frames]
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 313, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/nxhoang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 310, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Calculated padded input size per channel: (3). Kernel size: (4). Kernel size can't be greater than actual input size
