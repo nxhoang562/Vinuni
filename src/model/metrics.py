@@ -30,6 +30,7 @@ def compute_pck_pckh(dt_kpts,gt_kpts,thr):
     pck[17] = 100*np.mean(dist <= thr)
     return pck[17]
 
+
 def compute_similarity_transform(X, Y, compute_optimal_scale=False):
     """
     A port of MATLAB's `procrustes` function to Numpy.
@@ -125,4 +126,32 @@ def pampjpe(x, y):
     pampjpe = np.mean(pampjpe)
 
     return  pampjpe
+
+
+def calculate_error(x, y):
+    """
+    Compute MPJPE and PA-MPJPE given predictions and ground-truths.
+    """
+    preds = np.array(x)
+    gts = np.array(y)
+    N = preds.shape[0]
+    
+    num_joints = preds.shape[1]
+
+    mpjpe = np.mean(np.sqrt(np.sum(np.square(preds - gts), axis=2)))
+
+    pampjpe = np.zeros([N, num_joints])
+
+    for n in range(N):
+        frame_pred = preds[n]
+        frame_gt = gts[n]
+        _, Z, T, b, c = compute_similarity_transform(frame_gt, frame_pred, compute_optimal_scale=True)
+        frame_pred = (b * frame_pred.dot(T)) + c
+        pampjpe[n] = np.sqrt(np.sum(np.square(frame_pred - frame_gt), axis=1))
+
+    pampjpe = np.mean(pampjpe)
+
+    return mpjpe, pampjpe
+
+
 

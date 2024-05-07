@@ -9,10 +9,10 @@ parameters:
   ae_batch_size:
     values: [64,128,256,512]
   ae_n_epochs: 
-     value: 1
-    # distribution: int_uniform
-    # min: 20
-    # max: 60 
+    #  value: 1
+     distribution: int_uniform
+     min: 20
+     max: 50 
   ae_lr:
     distribution: log_uniform_values
     min: 0.0001
@@ -20,28 +20,18 @@ parameters:
   ae_momentum: #adam thi co weight decay 
     values: [0.5,0.6,0.7,0.8,0.9] #0.5-0.7 is beneficial for noisy datasets 
  
-  # ae_kernel_size_1:
-  #   distribution: int_uniform 
-  #   min: 2
-  #   max: 7
-  # ae_kernel_size_2:
-  #   distribution: int_uniform
-  #   min: 2
-  #   max: 7 
-  # ae_kernel_size_1:
-  #   value: 3
+  ae_kernel_size_1:
+    value: 3
+  ae_kernel_size_2:
+    value: 3 
 
-  # ae_kernel_size_2:
-  #   value: 3
-
- 
-  # ae_maxpooling_1:
-  #   value: 2
+  ae_maxpooling_1:
+    value: 2
     # distribution: int_uniform 
     # min: 2
     # max: 5
-  # ae_maxpooling_2:
-  #   values: [2,3]
+  ae_maxpooling_2:
+    value: 2
   #   # distribution: int_uniform
   #   # min: 2
   #   # max: 6 
@@ -149,10 +139,10 @@ parameters:
       
   # Combined model configs
   est_n_epochs:
-     value: 1
-    # distribution: int_uniform
-    # min: 50
-    # max: 150
+    #  value: 1
+    distribution: int_uniform
+    min: 20
+    max: 100
   est_lr:
     distribution: log_uniform_values
     min: 0.001
