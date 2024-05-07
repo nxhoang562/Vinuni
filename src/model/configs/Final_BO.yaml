@@ -1,7 +1,7 @@
 method: bayes
 metric:
     goal: minimize
-    name: estimator_val_loss #val_acc 
+    name: estimator_loss #val_acc 
 
 parameters:
 
@@ -9,14 +9,14 @@ parameters:
   ae_batch_size:
     values: [64,128,256,512]
   ae_n_epochs: 
-    # value: 1
-    distribution: int_uniform
-    min: 20
-    max: 60 
+     value: 1
+    # distribution: int_uniform
+    # min: 20
+    # max: 60 
   ae_lr:
     distribution: log_uniform_values
     min: 0.0001
-    max: 0.05
+    max: 0.001
   ae_momentum: #adam thi co weight decay 
     values: [0.5,0.6,0.7,0.8,0.9] #0.5-0.7 is beneficial for noisy datasets 
  
@@ -126,14 +126,13 @@ parameters:
     value: 2
   
   est_maxpooling_2:
-    distribution: int_uniform 
-    min: 2
-    max: 3
+    # distribution: int_uniform 
+    value: 2
   
   est_maxpooling_3:
-    distribution: int_uniform 
-    min: 2
-    max: 3
+    # distribution: int_uniform 
+    value: 2
+  
 
   # est_maxpooling_4:
   #   distribution: int_uniform 
@@ -150,10 +149,10 @@ parameters:
       
   # Combined model configs
   est_n_epochs:
-    # value: 1
-    distribution: int_uniform
-    min: 50
-    max: 150
+     value: 1
+    # distribution: int_uniform
+    # min: 50
+    # max: 150
   est_lr:
     distribution: log_uniform_values
     min: 0.001

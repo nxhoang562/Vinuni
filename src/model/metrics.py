@@ -15,8 +15,13 @@ def compute_pck_pckh(dt_kpts,gt_kpts,thr):
     gt=np.array(gt_kpts)
     assert(dt.shape[0]==gt.shape[0])
     kpts_num=gt.shape[2] #keypoints
+    ped_num = gt.shape[0] #batch_size 
 
-    dist=np.sqrt(np.sum(np.square(dt-gt),1))
+    #compute dist 
+    scale=np.sqrt(np.sum(np.square(gt[:,:,1]-gt[:,:,11]),1)) #right shoulder--left hip
+    #dist=np.sqrt(np.sum(np.square(dt-gt),1))/np.tile(scale,(gt.shape[2],1)).T
+    dist=np.sqrt(np.sum(np.square(dt-gt),1))/np.tile(scale,(gt.shape[2],1)).T
+    # dist=np.sqrt(np.sum(np.square(dt-gt),1))
 
     pck = np.zeros(gt.shape[2]+1)
     for kpt_idx in range(kpts_num):
@@ -96,7 +101,7 @@ def mpjpe(x, y):
 
     mpjpe = np.mean(np.sqrt(np.sum(np.square(preds - gts), axis=2)))
 
-    return mpjpe*1000
+    return mpjpe
 
 def pampjpe(x, y):
     """
@@ -119,5 +124,5 @@ def pampjpe(x, y):
 
     pampjpe = np.mean(pampjpe)
 
-    return  pampjpe*1000
+    return  pampjpe
 

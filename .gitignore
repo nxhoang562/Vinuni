@@ -2,6 +2,7 @@ Data/
 Processed_Data/
 metafi/
 __pycache__/
+src/model/wandb/
 .ipynb_checkpoints/
 
 # name_folder/, name_file; 
