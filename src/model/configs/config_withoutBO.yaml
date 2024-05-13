@@ -1,0 +1,94 @@
+
+  ae_batch_size: 128
+  ae_n_epochs: 1
+  est_n_epochs: 1
+  ae_lr: 0.0002
+   
+  ae_momentum: 0.5
+ 
+  ae_kernel_size_1: 3
+  ae_kernel_size_2: 3 
+
+  ae_maxpooling_1: 2
+    
+  ae_maxpooling_2: 2
+
+  ae_n_kernels_1: 16
+  
+  ae_n_kernels_2: 32
+  
+
+
+
+#Estimator configurations 
+  est_batch_size: 256
+
+  # est_pool_dim:
+  #   value: "time"
+
+  est_dropout: 0.1
+
+  est_n_basis_kernels: 16
+   
+
+  est_kernel_size_1: 3
+  est_kernel_size_2: 3 
+  est_kernel_size_3: 3
+   
+  # est_kernel_size_4:
+  #   distribution: int_uniform 
+  #   min: 2
+  #   max: 4  
+  # est_kernel_size_5:
+  #   distribution: int_uniform 
+  #   min: 2
+  #   max: 4  
+
+  est_n_kernels_1: 8  
+  est_n_kernels_2: 16
+  est_n_kernels_3: 32
+  # est_n_kernels_4:
+  #   distribution: int_uniform 
+  #   min: 64
+  #   max: 128 
+  # est_n_kernels_5:
+  #   distribution: int_uniform 
+  #   min: 64
+  #   max: 128
+  
+  est_num_layers: 3
+ 
+
+  est_temperature: 30
+  
+  
+  est_maxpooling_1: 2
+  
+  est_maxpooling_2: 2
+    
+  est_maxpooling_3: 2 
+  
+  
+
+  # est_maxpooling_4:
+  #   distribution: int_uniform 
+  #   min: 2
+  #   max: 3
+
+  # est_maxpooling_5:
+  #   distribution: int_uniform 
+  #   min: 2
+  #   max: 3
+  
+  est_d_hidden: 256
+  
+      
+  # Combined model configs
+  est_n_epochs: 10
+  est_lr: 0.005
+
+  
+
+
+      
+

@@ -319,7 +319,7 @@ class MMFi_Dataset(Dataset):
 
     # Define noise function in here
     def add_noise(self, signal):
-        signal = signal + np.random.randn(*signal.shape)*0.1
+        signal = signal + np.random.randn(*signal.shape)*0.2
 
         return signal
     

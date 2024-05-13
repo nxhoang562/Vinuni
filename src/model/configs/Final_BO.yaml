@@ -135,7 +135,7 @@ parameters:
   #   max: 3
   
   est_d_hidden:
-    values: [32, 64, 128, 356] 
+    values: [32, 64, 128, 256] 
       
   # Combined model configs
   est_n_epochs:
@@ -147,8 +147,8 @@ parameters:
     distribution: log_uniform_values
     min: 0.001
     max: 0.05
-  est_momentum:
-      values: [0.8,0.9]
+  # est_momentum:
+  #     values: [0.8,0.9]
   
 
 

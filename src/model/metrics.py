@@ -19,7 +19,6 @@ def compute_pck_pckh(dt_kpts,gt_kpts,thr):
 
     #compute dist 
     scale=np.sqrt(np.sum(np.square(gt[:,:,1]-gt[:,:,11]),1)) #right shoulder--left hip
-    #dist=np.sqrt(np.sum(np.square(dt-gt),1))/np.tile(scale,(gt.shape[2],1)).T
     dist=np.sqrt(np.sum(np.square(dt-gt),1))/np.tile(scale,(gt.shape[2],1)).T
     # dist=np.sqrt(np.sum(np.square(dt-gt),1))
 
@@ -27,8 +26,8 @@ def compute_pck_pckh(dt_kpts,gt_kpts,thr):
     for kpt_idx in range(kpts_num):
         pck[kpt_idx] = 100*np.mean(dist[:,kpt_idx] <= thr)
 
-    pck[17] = 100*np.mean(dist <= thr)
-    return pck[17]
+    pck[-1] = 100*np.mean(dist <= thr)
+    return pck[-1]
 
 
 def compute_similarity_transform(X, Y, compute_optimal_scale=False):
