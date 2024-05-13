@@ -317,7 +317,7 @@ class MMFi_Dataset(Dataset):
         return torch.from_numpy(sample['input_noise_norm']).float(), sample['output'].float()
     
     def add_noise(self, signal):
-        signal = signal + np.random.randn(*signal.shape)*0.3
+        signal = signal + np.random.randn(*signal.shape)*0.2
 
         return signal
     
