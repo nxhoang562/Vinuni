@@ -146,7 +146,7 @@ parameters:
   est_lr:
     distribution: log_uniform_values
     min: 0.001
-    max: 0.05
+    max: 0.01
   # est_momentum:
   #     values: [0.8,0.9]
   
